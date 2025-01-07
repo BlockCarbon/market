@@ -122,19 +122,24 @@ Total Hours: 550
 ### Validator Design
 
 Aiken validator for the carbon registry that:
-    1. Defines core data structures for carbon projects 
-    2. Implements main validation logic for: 
-        ◦ Project registration 
-        ◦ Verification 
-        ◦ Updates 
-        ◦ Retirement 
-    3. Uses Cardano's eUTxO model instead of Solidity's account-based model 
-    4. Documents removed functionality that will need separate implementation 
+
+(1) Defines core data structures for carbon projects 
+(2) Implements main validation logic for
+* Project registration 
+* Verification 
+* Updates 
+* Retirement 
+(3) Uses Cardano's eUTxO model instead of Solidity's account-based model 
+(4) Documents removed functionality that will need separate implementation
+
 Key differences from the Solidity version:
-    1. State management is handled through UTxOs rather than storage variables 
-    2. Validation focuses on state transitions rather than direct mutations 
-    3. Fee handling is separated into its own validator 
-    4. Token functionality will be handled by native tokens
+1. State management is handled through UTxOs rather than storage variables
+   
+2. Validation focuses on state transitions rather than direct mutations
+   
+3. Fee handling is separated into its own validator
+   
+4. Token functionality will be handled by native tokens
 
 
 
