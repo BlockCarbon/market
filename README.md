@@ -6,11 +6,9 @@ We take a look at the industry standard open source [Toucan Base Carbon Tonne](h
 # BlockCarbon Project Management Plan
 
 ## Overview
-Total Budget: $32,250
 Total Hours: 550
-Project Duration: 6 months
 
-## 1. Prototype Blueprint/Designs (150 hours, $8,250)
+## 1. Prototype Blueprint/Designs
 
 ### 1.1 Market Research & Requirements Analysis (30 hours)
 - Market analysis of existing carbon credit platforms (8h)
@@ -33,7 +31,7 @@ Project Duration: 6 months
 - Integration points specification (10h)
 - Technical feasibility assessment (10h)
 
-## 2. Carbon Market Report & Token Whitepaper (150 hours, $9,000)
+## 2. Carbon Market Report & Token Whitepaper (150 hours)
 
 ### 2.1 Market Research (40 hours)
 - Analysis of current carbon markets (15h)
@@ -55,7 +53,7 @@ Project Duration: 6 months
 - Peer review process (10h)
 - Final revisions and formatting (5h)
 
-## 3. UTxO Trading Infrastructure Report (100 hours, $6,000)
+## 3. UTxO Trading Infrastructure Report (100 hours)
 
 ### 3.1 Research Phase (40 hours)
 - Analysis of Cardano Project Catalyst funds (10h)
@@ -72,7 +70,7 @@ Project Duration: 6 months
 - Implementation guidelines (10h)
 - Future development recommendations (5h)
 
-## 4. Jurisdictional Analysis & Documentation (150 hours, $9,000)
+## 4. Jurisdictional Analysis & Documentation (150 hours)
 
 ### 4.1 Legal Research (50 hours)
 - Regulatory framework analysis by region (20h)
@@ -120,95 +118,171 @@ Project Duration: 6 months
 3. Begin stakeholder engagement
 4. Initiate market research phase
 
-We examined the Solidity smart contract of the BCT carbon credit token. This review looks into its structure and functionality to create a similar template in chain-agnostic Rust-based smart contract language.
 
-Here is the content of the BCT Solidity smart contract file with comments, imports and boilerplate code removed:
+### Validator Design
 
 ~~~
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+use aiken/hash.{Blake2b_224, Hash}
+use aiken/list
+use aiken/transaction.{ScriptContext}
+use aiken/transaction/credential.{VerificationKey}
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+// Types for our carbon registry
 
-contract BasicCarbonOffsets is ERC20 {
-    address public admin;
-    mapping(address => uint256) public balances;
-
-    constructor(uint256 initialSupply) ERC20("BasicCarbonOffsets", "BCO") {
-        _mint(msg.sender, initialSupply);
-        admin = msg.sender;
-    }
-
-    function mint(address to, uint256 amount) external {
-        require(msg.sender == admin, "only admin can mint");
-        _mint(to, amount);
-    }
-
-    function burn(uint256 amount) external {
-        _burn(msg.sender, amount);
-    }
+/// Project data stored in datum
+type ProjectData {
+  project_id: ByteArray,
+  vintage_year: Int,
+  quantity: Int,
+  standard: Standard,
+  project_type: ProjectType,
+  country: ByteArray,
+  // Note: Optional upgradeability features
 }
-~~~
 
-This Solidity contract uses the OpenZeppelin library for ERC20 token implementation. It defines a simple ERC20 token with minting and burning functionalities controlled by an admin.
+/// Supported carbon credit standards
+type Standard {
+  Verra
+  GoldStandard
+  ICR
+}
 
-### Universal Smart Contract
+/// Types of carbon projects
+type ProjectType {
+  Forestry
+  RenewableEnergy
+  EnergyEfficiency
+  Other
+}
 
-Below is the equivalent template for a smart contract that allows first class abstractions and static typing. Please note that Cardano and other non-EVM languages and its smart contract models are different from Solidity.
+/// Datum structure for registry UTxOs
+type RegistryDatum {
+  owner: VerificationKeyHash,
+  project: ProjectData,
+  status: ProjectStatus,
+}
 
-~~~
-module BasicCarbonOffsets::BCO {
-    use 0x1::Signer;
-    use 0x1::Account;
-    use 0x1::Coin;
-    use 0x1::Event;
-    use 0x1::Vector;
+/// Status of projects in registry
+type ProjectStatus {
+  Pending
+  Verified
+  Rejected
+  Retired
+}
+
+/// Possible actions that can be performed
+type RegistryAction {
+  RegisterProject { project: ProjectData }
+  VerifyProject
+  RejectProject
+  UpdateMetadata { new_data: ProjectData }
+  RetireCredits { amount: Int }
+}
+
+/// Main registry validator
+validator registry {
+  fn validate(datum: RegistryDatum, redeemer: RegistryAction, ctx: ScriptContext) -> Bool {
+    // Extract key information from context
+    let ScriptContext { transaction, purpose } = ctx
     
-    struct MintEvent has copy, drop, store {
-        amount: u64,
-        to: address,
-    }
+    // Verify basic transaction structure
+    expect Some(own_input) = transaction.find_input(purpose)
+    expect Some(own_output) = transaction.find_own_output(ctx)
+    
+    // Match on action type
+    when redeemer is {
+      // New project registration
+      RegisterProject { project } -> {
+        // Ensure project ID is unique - would need to scan other outputs
+        // TODO: Account model would use mappings, for UTxO we need different approach
+        
+        // Verify project data is valid
+        validate_project_data(project) && 
+          own_output.datum == RegistryDatum {
+            owner: datum.owner,
+            project: project,
+            status: Pending,
+          }
+      }
 
-    struct BurnEvent has copy, drop, store {
-        amount: u64,
-        from: address,
-    }
+      // Verify existing project
+      VerifyProject -> {
+        // Only registry owner can verify
+        transaction.is_signed_by(datum.owner) &&
+          datum.status == Pending &&
+          own_output.datum == RegistryDatum {
+            owner: datum.owner,
+            project: datum.project,
+            status: Verified,
+          }
+      }
 
-    struct BCO has key {
-        balance: Coin.T<BCO>,
-        admin: address,
-    }
+      // Reject project
+      RejectProject -> {
+        // Only registry owner can reject
+        transaction.is_signed_by(datum.owner) &&
+          datum.status == Pending &&
+          own_output.datum == RegistryDatum {
+            owner: datum.owner,
+            project: datum.project,
+            status: Rejected,
+          }
+      }
 
-    public fun initialize(account: &signer, initial_supply: u64) {
-        let admin = Signer.address_of(account);
-        let coin = Coin.mint<BCO>(initial_supply);
-        let bco = BCO {
-            balance: coin,
-            admin: admin,
-        };
-        move_to(account, bco);
-    }
+      // Update project metadata
+      UpdateMetadata { new_data } -> {
+        // Only project owner can update
+        transaction.is_signed_by(datum.owner) &&
+          datum.status == Verified &&
+          validate_project_data(new_data) &&
+          own_output.datum == RegistryDatum {
+            owner: datum.owner,
+            project: new_data,
+            status: datum.status,
+          }
+      }
 
-    public fun mint(account: &signer, to: address, amount: u64) {
-        let bco = borrow_global_mut<BCO>(Signer.address_of(account));
-        assert!(Signer.address_of(account) == bco.admin, 1);
-        let coin = Coin.mint<BCO>(amount);
-        Coin.deposit(to, coin);
-        Event::emit_event<MintEvent>(&bco.mint_events, MintEvent { amount, to });
+      // Retire carbon credits
+      RetireCredits { amount } -> {
+        // Verify project is active and has sufficient credits
+        datum.status == Verified &&
+          amount <= datum.project.quantity &&
+          own_output.datum == RegistryDatum {
+            owner: datum.owner,
+            project: ProjectData {
+              ..datum.project,
+              quantity: datum.project.quantity - amount,
+            },
+            status: datum.status,
+          }
+      }
     }
-
-    public fun burn(account: &signer, amount: u64) {
-        let bco = borrow_global_mut<BCO>(Signer.address_of(account));
-        let from = Signer.address_of(account);
-        let coin = Coin.withdraw<BCO>(&bco.balance, amount);
-        Coin.burn(coin);
-        Event::emit_event<BurnEvent>(&bco.burn_events, BurnEvent { amount, from });
-    }
+  }
 }
+
+// Helper function to validate project data
+fn validate_project_data(project: ProjectData) -> Bool {
+  // Implement validation rules for project data
+  // This would include checks for:
+  // - Valid vintage year
+  // - Non-zero quantity
+  // - Valid country code
+  // etc.
+  
+  project.quantity > 0 &&
+    project.vintage_year >= 2000 &&
+    project.vintage_year <= 2100
+}
+
+// Note: The following features have been intentionally simplified or removed:
+// 1. Upgradeability pattern - Cardano validators are immutable by design
+// 2. Complex fee structure - Will be implemented in separate validator
+// 3. ERC20 converter - Will be handled by native token minting policy
+// 4. Certificate NFTs - Will be separate validator
 ~~~
 
-### Python Deploy Script
-This basic Python script *deploy.py* can be used for deploying either the Solidity or universal (chain-agnostic, Cardano etc.) contract based on user selection:
+### MeshJS or OpShin/Python Deploy Scripts
+This basic Python script *deploy.py* can be used experimentally (Testnet only)
 
 ~~~
 import subprocess
@@ -255,13 +329,13 @@ if __name__ == "__main__":
         deploy_move_contract()
 ~~~
 
-This script provides a simple way to deploy a carbon offset smart contract using either Solidity or another non-EVM language by choice. It requires the user to adjust the CLI command based on the specific environment and setup. 
+This script provides a simple way to deploy a carbon offset smart contract using either Aiken or another validator language by choice. It requires the user to adjust the CLI command based on the specific environment and setup. 
 
 [List of Community-built Developer Tools](https://www.essentialcardano.io/article/a-list-of-community-built-developer-tools-on-cardano)
 
 [Calling Endpoint via CLI](https://forum.cardano.org/t/how-can-i-call-endpoint-via-cardano-cli-transaction-build-command/111154)
 
-### Getting started with Mesh
+### Getting started with MeshJS
 To get started with Mesh, you need to install the latest version of Mesh with npm:
 
 ~~~
@@ -357,12 +431,12 @@ To run this script, use ts-node, which allows you to execute TypeScript files di
 `Run the script with:`
 
 
-`ts-node deploy.ts [solidity|move]`
+`ts-node deploy.ts [aiken]`
 
 
-Replace [solidity|move] with either solidity or move depending on which contract you want to deploy.
+Replace [aiken] with other language depending on which contract you want to deploy.
 
-This script reads, compiles, and deploys the Solidity contract using ethers.js and executes a command to deploy the Move contract using the CLI tool. Adjust the Move deployment command as necessary for your specific environment and setup.
+This script reads, compiles, and deploys the smart contract using ethers.js and executes a command to deploy the Move contract using the CLI tool. Adjust the off-chain deployment command as necessary for your specific environment and setup.
 
 [MeshJS](https://docs.meshjs.dev/classes/MeshWallet)
 
