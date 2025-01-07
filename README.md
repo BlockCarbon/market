@@ -1,7 +1,7 @@
 # exchange
-Development of hybrid market place technology for carbon credit tokenization
+Development of hybrid market place technology for Cardano carbon credit tokenization.
 
-We take a look at the industry standard open source [Toucan Base Carbon Tonne](https://toucan.earth/home/) contract from 2021 Solidity code and discuss its elements and chain-agnostic implementation as well as Python or Typescript deployment like [Opshin](https://github.com/OpShin/opshin), [MeshJS](https://meshjs.dev/).
+We take a look at best practise industry carbon registry, token minting policy and retirement contracts and adjust them for the UTxO model and its advantages. Meant for discussion of progressive elements and testnet implementation as well as Python or Typescript deployment like [Opshin](https://github.com/OpShin/opshin), [MeshJS](https://meshjs.dev/).
 
 # BlockCarbon Project Management Plan
 
