@@ -121,6 +121,61 @@ Total Hours: 550
 
 ### Validator Design
 
+Aiken validator for the carbon registry that:
+    1. Defines core data structures for carbon projects 
+    2. Implements main validation logic for: 
+        ◦ Project registration 
+        ◦ Verification 
+        ◦ Updates 
+        ◦ Retirement 
+    3. Uses Cardano's eUTxO model instead of Solidity's account-based model 
+    4. Documents removed functionality that will need separate implementation 
+Key differences from the Solidity version:
+    1. State management is handled through UTxOs rather than storage variables 
+    2. Validation focuses on state transitions rather than direct mutations 
+    3. Fee handling is separated into its own validator 
+    4. Token functionality will be handled by native tokens
+
+
+
+Token minting policy requirements:
+
+    1. Controls the lifecycle of carbon credit tokens: 
+        ◦ Initial minting for verified projects 
+        ◦ Burning during retirement 
+        ◦ Emergency freeze capability 
+    2. Integrates with the registry validator by: 
+        ◦ Verifying project status before minting 
+        ◦ Checking quantities against registry records 
+        ◦ Maintaining registry owner control 
+    3. Implements key differences from the Solidity version: 
+        ◦ Uses Cardano native tokens instead of ERC20 
+        ◦ Implements direct burning rather than status flags 
+        ◦ Leverages UTxO model for balance tracking
+
+Retirement validator that:
+    1. Implements a two-step retirement process: 
+        ◦ Initial retirement creation with token burning 
+        ◦ Confirmation with permanent transaction record 
+    2. Stores comprehensive retirement data: 
+        ◦ Beneficiary information 
+        ◦ Retirement details and messages 
+        ◦ Project references 
+        ◦ Immutable proof of retirement 
+    3. Provides safety mechanisms: 
+        ◦ Pending state for verification 
+        ◦ Emergency cancellation capability 
+        ◦ Validation of token burning 
+    4. Creates permanent on-chain records that: 
+        ◦ Cannot be modified once confirmed 
+        ◦ Link to the burning transaction 
+        ◦ Maintain complete retirement history 
+
+    1. Add more detailed retirement metadata handling 
+    2. Implement batch retirement capabilities 
+    3. Add fee calculation logic 
+    4. Create the certificate NFT minting integration
+
 ~~~
 use aiken/hash.{Blake2b_224, Hash}
 use aiken/list
