@@ -236,29 +236,6 @@ The platform employs a distributed ledger architecture operating across globally
 - Cross-border policy alignment through programmable compliance
 - Automated verification of sustainability claims
 
-### Smart Contract Governance Layer
-
-The governance layer implements policy requirements through deterministic smart contracts, reducing administrative overhead while enhancing compliance. Key features include:
-
-```haskell
-data PolicyFramework = PolicyFramework {
-    sdgAlignment :: Map SDGGoal ComplianceMetrics,
-    verificationProtocols :: VerificationSystem,
-    crossBorderRules :: RegulatoryFramework
-}
-```
-
-### Value Transfer and Tokenization Framework
-
-Our system introduces a sophisticated tokenization framework that bridges environmental actions with economic incentives:
-
-```haskell
-data SustainabilityToken = SustainabilityToken {
-    environmentalImpact :: VerifiableImpact,
-    sdgContribution :: [SDGMetric],
-    regulatoryCompliance :: ComplianceStatus
-}
-```
 
 ## Implementation of UN Sustainable Development Framework
 
