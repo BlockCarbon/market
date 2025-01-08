@@ -2,7 +2,12 @@
 
 ## Abstract
 
-Putting a price on carbon that penalizes emissions of greenhouse gases, rewards mitigation and clean tech is one of the most pressing challenges of the 21st century. The emerging carbon credit market since its infancy in the Kyoto Protocol and voluntary carbon offsets faces significant challenges from lack of scalability, transparency, and efficiency due to fragmented infrastructure and intermediary-dependent processes. This whitepaper presents the BlockCarbon Exchange, a decentralized marketplace built on Cardano that enables seamless trading of tokenized carbon credits. By leveraging Cardano's Extended UTXO model, deterministic smart contracts, and Native Token functionality, BlockCarbon creates a robust platform for transparent carbon credit transactions while ensuring regulatory compliance and market integrity. The platform introduces an innovative hybrid approach combining centralized validation with decentralized trading mechanisms, allowing for gradual transition toward full decentralization as the market matures.
+Putting a price on carbon that penalizes emissions of greenhouse gases, rewards mitigation and clean tech is one of the most pressing challenges of the 21st century. The emerging carbon credit market since its infancy in the Kyoto Protocol and voluntary carbon offsets faces significant challenges from lack of scalability, transparency, and efficiency due to fragmented infrastructure and intermediary-dependent processes. 
+
+This whitepaper presents the BlockCarbon Exchange, a decentralized marketplace built on Cardano that enables seamless trading of tokenized carbon credits. By leveraging Cardano's Extended UTXO model, deterministic smart contracts, and Native Token functionality, BlockCarbon creates a robust platform for transparent carbon credit transactions while ensuring regulatory compliance and market integrity. The platform introduces an innovative hybrid approach combining centralized validation with decentralized trading mechanisms, allowing for gradual transition toward full decentralization as the market matures.
+
+The primary challenge for decentralized carbon pricing is the reliance on real world validation and the integration of minting and burning (retirement) operations with traditional swapping, farming or transferring of native tokens. We propose a general purpose market place that can integrate with off-chain apps and on-chain validation for typical mechanisms of environmental markets, while not getting in the way of uninterrupted asset exchange and ownership.
+
 
 ## Table of Contents
 
