@@ -1081,9 +1081,13 @@ The success of BlockCarbon will contribute significantly to the growth and effic
 
 # Concise Technical Terms Glossary
 
+**Absolute vs Relative Price** -- The distinction between a good's price in currency terms versus its exchange rate with other goods.
+
 **Abstraction** -- The practice of creating models that can be reused across different applications and computer systems without rewriting program code. It allows designers to separate fundamental frameworks from specific implementation details.
 
 **Account-based model** -- A ledger model where global state is shared and operations occur sequentially. Common in many blockchains but prone to front-running due to transaction ordering being influenced by fees.
+
+**ACTUS (Algorithmic Contract Types Unified Standards)** -- A standardized taxonomy for financial contracts based on their underlying patterns.
 
 **Aiken** is a modern programming language and toolkit for developing smart contracts on the Cardano blockchain developed by TxPipe . It is geared towards robustness and developer experience.
 
@@ -1113,11 +1117,19 @@ The success of BlockCarbon will contribute significantly to the growth and effic
 
 **Backpressure** -- A network load management strategy used in Cardano to regulate traffic during periods of saturation.
 
+**Basho** -- The fourth phase of Cardano development focused on optimization and performance improvements.
+
+**BECCS (Bioenergy with carbon capture and storage)** -- A carbon removal technique combining biomass energy generation with CO2 capture.
+
 **Bellman-Ford algorithm** -- A method for computing shortest paths in a weighted graph, capable of handling negative edge weights unlike simpler algorithms.
+
+**Benchmark** -- A standard against which investment or system performance is measured.
 
 **BFT (Byzantine fault tolerance)** -- A system's ability to maintain operation even when some nodes fail or exhibit malicious behavior.
 
 **Bitcoin** -- A peer-to-peer cryptocurrency and payment system using blockchain technology, launched in 2009 under the pseudonym Satoshi Nakamoto.
+
+**Black swan event** -- An unpredictable event with severe consequences, often rationalized after occurrence.
 
 **Block** -- A set of validated transactions containing cryptographic links to previous blocks, forming a chain of transaction history.
 
@@ -1125,15 +1137,25 @@ The success of BlockCarbon will contribute significantly to the growth and effic
 
 **Blockchain** -- A continuously growing list of records (blocks) linked and secured using cryptography, creating an immutable distributed ledger.
 
+**Buffer pool** -- Reserved carbon credits protecting against potential future project failures.
+
 **Business logic** -- The portion of a program encoding real-world rules determining how data can be created, stored, and modified.
 
 **Byron** -- The initial phase of Cardano development, focusing on core network functionality.
 
+**California Air Resources Board** -- A state agency managing California's compliance cap-and-trade program.
+
 **Capital efficiency** -- A measure of how effectively capital generates returns in a system.
+
+**Cap-and-trade** -- An emissions control system where companies trade allowances under a total limit.
 
 **Carbon capture and storage (CCS)** -- Technology for capturing CO2 from emission sources and storing it underground or undersea.
 
+**Carbon colonialism** -- The outsourcing of emissions reduction responsibility from developed to developing nations through offset markets.
+
 **Carbon credits** -- Tokens representing one tonne of CO2 equivalent that can be traded between entities to compensate for emissions through reduction or removal activities elsewhere.
+
+**Carbon-negative** -- Achieving net removal of CO2 from the atmosphere beyond neutralizing emissions.
 
 **Cardano** -- A proof-of-stake blockchain platform developed through peer-reviewed research and evidence-based methods, designed to provide sustainability and scalability for decentralized applications.
 
@@ -1145,9 +1167,15 @@ The success of BlockCarbon will contribute significantly to the growth and effic
 
 **Chain index** -- A database containing information extracted from Cardano transactions.
 
+**Chainlink** -- A decentralized oracle network bringing external data to various blockchains.
+
 **Chang Hard Fork** has been a pivotal upgrade to enhance network functionality and decentralized governance of the Conway Era, part one of two upgrades, the second being Plomin Hard Fork.
 
+**Colored coins** -- A method for representing real-world assets on the Bitcoin network.
+
 **Consensus** -- The process by which network participants reach agreement on the blockchain's state, including which blocks to produce and which chain to adopt.
+
+**Contract for difference (CFD)** -- A financial contract paying the difference between asset values at different times.
 
 **Conway Era** is the stage of Cardano's technical development that introduces liquid democracy, which enables individual empowerment through democratic consent by leveraging a voting process. See Voltaire Era.
 
@@ -1159,6 +1187,12 @@ The success of BlockCarbon will contribute significantly to the growth and effic
 
 **dApp (Decentralized Application)** -- An application running on a decentralized blockchain network rather than centralized servers.
 
+**DARPA** -- The U.S. Defense Advanced Research Projects Agency, advancing emerging technologies.
+
+**DB Sync** -- A tool synchronizing Cardano blockchain data into a PostgreSQL database.
+
+**Dead man's switch** -- An automatic mechanism triggered by operator incapacity.
+
 **DeFi (Decentralized Finance)** -- Financial instruments and mechanisms built on blockchain using smart contracts, operating without traditional intermediaries.
 
 **Delegation** -- The process by which ada holders participate in network operations by assigning their stake to a pool.
@@ -1169,9 +1203,13 @@ The success of BlockCarbon will contribute significantly to the growth and effic
 
 **Digital footprint** -- The trail of data created by an entity's activities in digital environments.
 
+**Direct air capture** -- Technology extracting CO2 directly from the atmosphere.
+
 **Domain-specific language** -- A computer language designed for a particular type of problem or domain, contrasting with general-purpose languages.
 
 **Double-spending** -- A potential flaw where the same digital token might be spent multiple times, prevented in blockchains through consensus mechanisms.
+
+**EDI (Edinburgh Decentralisation Index)** -- A system measuring blockchain decentralization across multiple metrics.
 
 **Epoch** -- A defined period of time in the Cardano blockchain, currently set at five days.
 
@@ -1189,9 +1227,15 @@ The success of BlockCarbon will contribute significantly to the growth and effic
 
 **Genesis block** -- The first block of a blockchain, typically hardcoded into the network's software.
 
+**GitHub Gist** -- A service for sharing code snippets and notes through Git repositories.
+
 **Goguen** -- The third phase of Cardano development, focusing on smart contract functionality.
 
+**Gold Standard** -- A Swiss NGO operating a major registry for carbon offset projects.
+
 **Governance** -- The system of rules, practices, and processes directing and controlling a blockchain network.
+
+**Greenwashing** -- Misleading claims about environmental benefits or sustainability practices.
 
 **Hard fork** -- A fundamental change to a network's protocol that makes previously invalid blocks valid or vice versa.
 
@@ -1201,27 +1245,57 @@ The success of BlockCarbon will contribute significantly to the growth and effic
 
 **High-Frequency Trading (HFT)** -- Rapid trading using sophisticated algorithms, often executing large numbers of orders in fractions of seconds.
 
+**HODL** -- A cryptocurrency investment strategy of holding assets long-term, regardless of market conditions.
+
 **Hot air** -- Carbon offsets that do not represent genuine emissions reductions.
 
+**Howey Test** -- A U.S. legal framework determining whether transactions qualify as investment contracts.
+
 **Hydra** -- A layer 2 scaling solution for Cardano enabling greater transaction throughput.
+
+**ICVCM (Integrity Council for the Voluntary Carbon Market)** -- An independent body setting quality standards for carbon offsets.
 
 **Impermanent loss** -- The temporary loss of asset value when providing liquidity to automated market makers compared to holding the assets.
 
 **Incentive** -- A mechanism encouraging network participation through proportional rewards.
 
+**Initial coin offering (ICO)** -- A cryptocurrency fundraising method where new projects sell tokens to investors.
+
+**Internet of Things (IoT)** -- A network of connected devices sharing data without human intervention.
+
 **Interoperability** -- The ability of different blockchain systems to exchange and use information.
 
+**Intra-era Hardfork** -- A focused semantic change to the Cardano ledger requiring a hard fork.
+
 **IOHK (Input Output Hong Kong)** -- A technology company developing the Cardano platform.
+
+**Isomorphism** -- A mathematical concept describing corresponding structures and relations between systems.
+
+**ITMOs (Internationally Transferred Mitigation Outcomes)** -- Carbon credits traded between Paris Agreement parties.
+
+**Jörmungandr** -- A node implementation supporting Project Catalyst on Cardano.
+
+**JSON (JavaScript Object Notation)** -- A human-readable data interchange format.
+
+**Key pair** -- The combination of public and private cryptographic keys used for blockchain transactions.
+
+**Lambda calculus** -- A formal system for expressing computation based on function abstraction and application.
 
 **Layer 1** -- The base blockchain protocol itself, such as Cardano or Bitcoin.
 
 **Layer 2** -- Secondary frameworks or protocols built on top of layer 1 to improve scalability or functionality.
 
+**Leakage** -- The displacement of carbon emissions from regulated to unregulated regions.
+
 **Ledger** -- A distributed database recording all transactions and account balances.
+
+**Light client** -- A simplified blockchain node that verifies transactions without storing the full chain.
 
 **Liquidity** -- The degree to which an asset can be quickly bought or sold without causing significant price impact.
 
 **Liquidity pool** -- A collection of crypto assets locked in a smart contract to facilitate trading.
+
+**Longest chain** -- The blockchain version considered valid by network consensus.
 
 **Market maker** -- An entity providing liquidity to markets by maintaining continuous buy and sell orders.
 
@@ -1243,11 +1317,21 @@ The success of BlockCarbon will contribute significantly to the growth and effic
 
 **Network** -- The technical infrastructure connecting blockchain nodes and their interactions.
 
+**Network Time Protocol** -- A networking protocol synchronizing computer system clocks across packet-switched networks.
+
+**NIPoPoWs (Non-Interactive Proofs of Proof-of-Work)** -- Compact evidence of blockchain events without downloading the complete chain.
+
 **NFT (Non-Fungible Token)** -- A unique digital asset that cannot be replaced with an identical item.
 
 **Node** -- A participant in the blockchain network that validates transactions and blocks.
 
+**Nonce** -- A one-time-use number in cryptographic communications preventing replay attacks.
+
+**OBFT (Ouroboros Byzantine Fault Tolerant)** -- A variant of Cardano's consensus protocol providing Byzantine fault tolerance.
+
 **Off-chain** -- Computations or data storage occurring outside the blockchain.
+
+**Off-chain code** -- Smart contract components executed outside the blockchain.
 
 **On-chain** -- Activities and data recorded directly on the blockchain.
 
@@ -1259,21 +1343,47 @@ The success of BlockCarbon will contribute significantly to the growth and effic
 
 **Parallelism** -- The simultaneous execution of independent computations to improve efficiency.
 
+**Parametric insurance** -- Insurance paying out based on predefined triggers rather than proven losses.
+
+**Pegging** -- Fixing one currency's value to another's.
+
 **Permanent loss** -- The definitive loss of asset value, distinct from temporary impermanent loss in liquidity provision.
+
+**Pledging** -- Stake pool operators committing their own ada to their pools.
 
 **Plomin Hard Fork** is implementing liquid democracy by utilizing bootstrap on-chain governance mechanisms to vote, ratify and enact major changes to the Cardano blockchain. These as being described in the Voltaire era and CIP-1694 documentation. It was originally called Chang 2.
 
 **Plutus** -- Cardano's smart contract platform based on Haskell.
 
+**Plutus Core** -- The low-level programming language executing scripts on Cardano.
+
+**Polymorphism** -- The ability to present the same interface for different underlying forms or data types.
+
+**PostgreSQL** -- An open-source relational database system used in blockchain applications.
+
+**Price discovery** -- The process of determining asset value through market participant interaction.
+
+**Produced blocks** -- The number of blocks created by a stake pool in the current epoch.
+
+**Programmability** -- A system's capacity to accept new instructions altering its behavior.
+
 **Proof of stake** -- A consensus mechanism where block creation rights are proportional to cryptocurrency holdings.
 
 **Protocol** -- The set of rules governing how a blockchain network operates.
+
+**Proxy signature** -- A digital signature allowing one user to delegate signing authority to another.
+
+**Public-key cryptography** -- An encryption system using paired public and private keys.
 
 **Quantitative Finance** -- Mathematical modeling of financial markets and instruments.
 
 **REDD+** -- A UN framework for reducing emissions from deforestation and forest degradation in developing countries.
 
+**Redeemer** -- The argument provided to a validator script when spending a script output.
+
 **Registries** -- Organizations tracking carbon offset projects and issuing verified carbon credits.
+
+**Regression testing** -- Verifying that previously tested software still functions after changes.
 
 **Rewards wallet** -- A wallet capable of participating in stake delegation.
 
@@ -1307,7 +1417,13 @@ The success of BlockCarbon will contribute significantly to the growth and effic
 
 **State channels** -- Layer 2 protocols allowing participants to conduct multiple transactions off-chain before settling on-chain.
 
+**TCP (Transmission Control Protocol)** -- A core internet protocol providing reliable data delivery between applications.
+
 **Testnet** -- A blockchain network for testing features before mainnet deployment.
+
+**Tether** -- A stablecoin designed to maintain parity with the US dollar.
+
+**TLA⁺** -- A formal specification language for designing and verifying distributed systems.
 
 **Token** -- A digital unit representing value or utility on a blockchain.
 
@@ -1317,19 +1433,41 @@ The success of BlockCarbon will contribute significantly to the growth and effic
 
 **Transaction** -- A record of value transfer between addresses on the blockchain.
 
+**Transaction Chaining** -- A method allowing spending of unconfirmed transaction outputs in order.
+
+**Transport Layer Security** -- A cryptographic protocol securing network communications.
+
+**Travel Rule** -- A regulation requiring collection of counterparty information for virtual asset transfers above certain thresholds.
+
 **Treasury** -- A portion of network rewards reserved for future development and sustainability.
+
+**Tricameralism** -- A governance system with three legislative or decision-making chambers.
+
+**Trilemma** -- The blockchain challenge of simultaneously achieving scalability, security, and decentralization.
 
 **Typescript** is a strongly typed programming language that builds on JavaScript, providing safer smart contract tooling at scale that is very popular across web3 development.
 
+**ulimit** -- A Linux command controlling user resource allocation.
+
+**Universal composability** -- A framework for analyzing cryptographic protocol security under composition.
+
 **UTXO (Unspent Transaction Output)** -- The output of a transaction that can be used as input in a new transaction.
+
+**Validation context** -- Data summarizing a transaction being validated and its current input.
 
 **Validator script** -- Code determining conditions for spending transaction outputs in the Extended UTXO model.
 
 **Verification** -- The process of confirming transaction or block validity according to network rules.
 
+**Verified Carbon Standard** -- A standard for carbon offset projects overseen by Verra.
+
 **Voltaire** -- The governance phase of Cardano development, introducing voting and treasury systems.
 
+**Voluntary Carbon Markets Integrity Initiative** -- An organization developing guidance for carbon market participants.
+
 **Wallet** -- Software storing private keys and managing cryptocurrency assets.
+
+**WebSocket** -- A communication protocol enabling full-duplex channels over TCP connections.
 
 **Web3** -- A vision of a decentralized internet built on blockchain technology.
 
