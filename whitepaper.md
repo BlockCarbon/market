@@ -709,14 +709,20 @@ validateTransaction :: Transaction -> ComplianceCheck -> STM ValidationResult
 
 The validation process implements a comprehensive verification system for carbon credits that ensures authenticity and compliance:
 
-```haskell
-data ValidationProcess = ValidationProcess {
-    verificationSteps :: [VerificationStep],
-    auditTrail :: AuditLog,
-    validatorRegistry :: ValidatorSet
+```typescript
+// Validation process implementation
+export class ValidationService {
+  async executeValidation(
+    claim: CreditClaim, 
+    process: ValidationProcess
+  ): Promise<ValidationResult> {
+    // Implement validation process
+    return {
+      status: VerificationStatus.PENDING,
+      details: '',
+    };
+  }
 }
-
-executeValidation :: CreditClaim -> ValidationProcess -> STM ValidationResult
 ```
 
 ### 9.3 Compliance Mechanisms
@@ -749,13 +755,199 @@ data SmartContractSystem = SmartContractSystem {
 
 The oracle system implements a decentralized price feed mechanism that ensures reliable and timely market data:
 
-```haskell
-data OracleNetwork = OracleNetwork {
-    priceFeedSystem :: PriceFeed,
-    validationNetwork :: ValidationNetwork,
-    dataAggregator :: DataAggregator
+~~~
+// Types for Oracle Network
+import { 
+  TransactionHash, 
+  AssetName,
+  PolicyId 
+} from '@meshsdk/core';
+
+// Core oracle network interfaces
+export interface OracleNetwork {
+  priceFeedSystem: PriceFeed;
+  validationNetwork: ValidationNetwork;
+  dataAggregator: DataAggregator;
 }
-```
+
+export interface PriceFeed {
+  currentPrice: bigint;
+  lastUpdate: Date;
+  confidence: number;
+  sources: string[];
+  updateInterval: number;
+}
+
+export interface ValidationNetwork {
+  validators: Set<string>;
+  minimumConsensus: number;
+  validationThreshold: number;
+  activeValidators: Map<string, ValidatorStatus>;
+}
+
+export interface DataAggregator {
+  dataPoints: Map<string, AggregatedData>;
+  aggregationMethod: AggregationMethod;
+  updateFrequency: number;
+  minimumSources: number;
+}
+
+// Supporting types
+export interface AggregatedData {
+  value: number;
+  timestamp: Date;
+  sources: string[];
+  confidence: number;
+}
+
+export enum AggregationMethod {
+  MEDIAN = 'MEDIAN',
+  MEAN = 'MEAN',
+  WEIGHTED_AVERAGE = 'WEIGHTED_AVERAGE'
+}
+
+export enum ValidatorStatus {
+  ACTIVE = 'ACTIVE',
+  SUSPENDED = 'SUSPENDED',
+  PENDING = 'PENDING'
+}
+
+// Oracle Network Implementation
+export class OracleNetworkService {
+  private network: OracleNetwork;
+
+  constructor(config: OracleNetworkConfig) {
+    this.network = this.initializeNetwork(config);
+  }
+
+  // Price feed methods
+  async getCurrentPrice(assetId: string): Promise<bigint> {
+    const feed = await this.getPriceFeed(assetId);
+    if (this.isPriceFeedStale(feed)) {
+      await this.updatePriceFeed(assetId);
+    }
+    return feed.currentPrice;
+  }
+
+  async updatePriceFeed(assetId: string): Promise<void> {
+    // Fetch new prices from configured sources
+    const prices = await this.fetchPricesFromSources(assetId);
+    const aggregatedPrice = this.aggregatePrice(prices);
+    
+    // Update the price feed
+    const feed = this.network.priceFeedSystem;
+    feed.currentPrice = aggregatedPrice;
+    feed.lastUpdate = new Date();
+  }
+
+  // Validation network methods
+  async validateData(data: any): Promise<ValidationResult> {
+    const activeValidators = this.getActiveValidators();
+    const validations = await this.collectValidations(data, activeValidators);
+    
+    return this.processValidations(validations);
+  }
+
+  // Data aggregation methods
+  async aggregateData(dataPoints: AggregatedData[]): Promise<AggregatedData> {
+    const aggregator = this.network.dataAggregator;
+    
+    if (dataPoints.length < aggregator.minimumSources) {
+      throw new Error('Insufficient data sources for aggregation');
+    }
+
+    return {
+      value: this.calculateAggregatedValue(dataPoints, aggregator.aggregationMethod),
+      timestamp: new Date(),
+      sources: dataPoints.flatMap(dp => dp.sources),
+      confidence: this.calculateConfidence(dataPoints)
+    };
+  }
+
+  // Private helper methods
+  private initializeNetwork(config: OracleNetworkConfig): OracleNetwork {
+    return {
+      priceFeedSystem: {
+        currentPrice: BigInt(0),
+        lastUpdate: new Date(),
+        confidence: 0,
+        sources: config.priceSources,
+        updateInterval: config.updateInterval
+      },
+      validationNetwork: {
+        validators: new Set(config.validators),
+        minimumConsensus: config.minimumConsensus,
+        validationThreshold: config.validationThreshold,
+        activeValidators: new Map()
+      },
+      dataAggregator: {
+        dataPoints: new Map(),
+        aggregationMethod: config.aggregationMethod,
+        updateFrequency: config.updateFrequency,
+        minimumSources: config.minimumSources
+      }
+    };
+  }
+
+  private async fetchPricesFromSources(assetId: string): Promise<Map<string, bigint>> {
+    const prices = new Map<string, bigint>();
+    const sources = this.network.priceFeedSystem.sources;
+
+    await Promise.all(sources.map(async source => {
+      try {
+        const price = await this.fetchPriceFromSource(source, assetId);
+        prices.set(source, price);
+      } catch (error) {
+        console.error(`Failed to fetch price from ${source}:`, error);
+      }
+    }));
+
+    return prices;
+  }
+
+  private calculateAggregatedValue(
+    dataPoints: AggregatedData[], 
+    method: AggregationMethod
+  ): number {
+    switch (method) {
+      case AggregationMethod.MEDIAN:
+        return this.calculateMedian(dataPoints.map(dp => dp.value));
+      case AggregationMethod.MEAN:
+        return this.calculateMean(dataPoints.map(dp => dp.value));
+      case AggregationMethod.WEIGHTED_AVERAGE:
+        return this.calculateWeightedAverage(dataPoints);
+      default:
+        throw new Error(`Unsupported aggregation method: ${method}`);
+    }
+  }
+
+  private calculateConfidence(dataPoints: AggregatedData[]): number {
+    // Implement confidence calculation based on data point distribution
+    // and source reliability
+    return 0.95; // Placeholder
+  }
+}
+
+// Configuration interface
+export interface OracleNetworkConfig {
+  priceSources: string[];
+  updateInterval: number;
+  validators: string[];
+  minimumConsensus: number;
+  validationThreshold: number;
+  aggregationMethod: AggregationMethod;
+  updateFrequency: number;
+  minimumSources: number;
+}
+
+// Types for validation results
+export interface ValidationResult {
+  isValid: boolean;
+  confidence: number;
+  validators: string[];
+  timestamp: Date;
+}
+~~~
 
 ### 10.3 Security Considerations
 
