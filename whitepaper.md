@@ -1078,3 +1078,261 @@ Future development will focus on expanding the platform's capabilities through:
 5. Development of additional financial instruments for environmental assets
 
 The success of BlockCarbon will contribute significantly to the growth and efficiency of global carbon markets, ultimately supporting the transition to a more sustainable economy.
+
+# Concise Technical Terms Glossary
+
+**Abstraction** -- The practice of creating models that can be reused across different applications and computer systems without rewriting program code. It allows designers to separate fundamental frameworks from specific implementation details.
+
+**Account-based model** -- A ledger model where global state is shared and operations occur sequentially. Common in many blockchains but prone to front-running due to transaction ordering being influenced by fees.
+
+**Aiken** is a modern programming language and toolkit for developing smart contracts on the Cardano blockchain developed by TxPipe . It is geared towards robustness and developer experience.
+
+**Ada** -- The digital currency of the Cardano blockchain, named after Ada Lovelace. One ada equals one million lovelaces.
+
+**Address** -- A data structure in transaction outputs containing network identification tags and proof of ownership. May include delegation choices or script references.
+
+**Additionality** -- A key criterion for carbon-offset projects that verifies emissions reductions are truly additional to what would have occurred without the project.
+
+**African Carbon Markets Initiative** -- A program designed to develop and expand carbon markets across Africa.
+
+**Agda** -- A dependently typed functional programming language offering advanced type system features.
+
+**AMM (Automated Market Maker)** -- A liquidity mechanism that enables automatic trading through mathematical formulas rather than traditional order books, allowing trading without active market makers.
+
+**Arbitrage** -- The practice of exploiting price differences between markets, typically buying at a lower price in one market and selling at a higher price in another.
+
+**Article 6** -- The section of the Paris Agreement defining mechanisms for voluntary cooperation between countries toward climate goals, including carbon markets.
+
+**Asset** -- A digital item of property stored in the distributed ledger that holds value, representing either fungible or non-fungible tokens.
+
+**Atala PRISM** -- A decentralized identity solution built on Cardano, enabling users to control their personal data and its access.
+
+**Atomic swap** -- A direct exchange of cryptocurrencies between blockchains without intermediaries.
+
+**Balance wallet** -- A wallet containing initial testnet ada copied from mainnet via balance snapshot. Its stake cannot be delegated but can be transferred to rewards wallets.
+
+**Backpressure** -- A network load management strategy used in Cardano to regulate traffic during periods of saturation.
+
+**Bellman-Ford algorithm** -- A method for computing shortest paths in a weighted graph, capable of handling negative edge weights unlike simpler algorithms.
+
+**BFT (Byzantine fault tolerance)** -- A system's ability to maintain operation even when some nodes fail or exhibit malicious behavior.
+
+**Bitcoin** -- A peer-to-peer cryptocurrency and payment system using blockchain technology, launched in 2009 under the pseudonym Satoshi Nakamoto.
+
+**Block** -- A set of validated transactions containing cryptographic links to previous blocks, forming a chain of transaction history.
+
+**Block header** -- The metadata portion of a block containing timestamp, hash representations, and other technical information.
+
+**Blockchain** -- A continuously growing list of records (blocks) linked and secured using cryptography, creating an immutable distributed ledger.
+
+**Business logic** -- The portion of a program encoding real-world rules determining how data can be created, stored, and modified.
+
+**Byron** -- The initial phase of Cardano development, focusing on core network functionality.
+
+**Capital efficiency** -- A measure of how effectively capital generates returns in a system.
+
+**Carbon capture and storage (CCS)** -- Technology for capturing CO2 from emission sources and storing it underground or undersea.
+
+**Carbon credits** -- Tokens representing one tonne of CO2 equivalent that can be traded between entities to compensate for emissions through reduction or removal activities elsewhere.
+
+**Cardano** -- A proof-of-stake blockchain platform developed through peer-reviewed research and evidence-based methods, designed to provide sustainability and scalability for decentralized applications.
+
+**CBOR (Concise Binary Object Representation)** -- A binary data format based on JSON that allows more efficient data transmission at the cost of human readability.
+
+**CEX (Centralized Exchange)** -- Traditional exchange model where trading occurs through an intermediary, contrary to decentralized exchanges.
+
+**Chain** -- A sequence of blocks cryptographically connected in consecutive order.
+
+**Chain index** -- A database containing information extracted from Cardano transactions.
+
+**Chang Hard Fork** has been a pivotal upgrade to enhance network functionality and decentralized governance of the Conway Era, part one of two upgrades, the second being Plomin Hard Fork.
+
+**Consensus** -- The process by which network participants reach agreement on the blockchain's state, including which blocks to produce and which chain to adopt.
+
+**Conway Era** is the stage of Cardano's technical development that introduces liquid democracy, which enables individual empowerment through democratic consent by leveraging a voting process. See Voltaire Era.
+
+**Cost per epoch** -- A fixed fee taken by stake pool operators from pool rewards to cover operational costs.
+
+**Daedalus** -- A secure full-node wallet for ada cryptocurrency that downloads and validates the complete Cardano blockchain.
+
+**DAO (Decentralized Autonomous Organization)** -- An organization represented by rules encoded as computer programs, transparent and controlled by network participants rather than central leadership.
+
+**dApp (Decentralized Application)** -- An application running on a decentralized blockchain network rather than centralized servers.
+
+**DeFi (Decentralized Finance)** -- Financial instruments and mechanisms built on blockchain using smart contracts, operating without traditional intermediaries.
+
+**Delegation** -- The process by which ada holders participate in network operations by assigning their stake to a pool.
+
+**Demeter Run** is is a PaaS (Platform-as-a-Service) that provides managed Cardano infrastructure built to streamline the development process within the Cardano ecosystem and make building decentralized applications (DApps) easy.
+
+**DEX (Decentralized Exchange)** -- A trading platform operating through smart contracts without intermediaries, allowing direct peer-to-peer transactions.
+
+**Digital footprint** -- The trail of data created by an entity's activities in digital environments.
+
+**Domain-specific language** -- A computer language designed for a particular type of problem or domain, contrasting with general-purpose languages.
+
+**Double-spending** -- A potential flaw where the same digital token might be spent multiple times, prevented in blockchains through consensus mechanisms.
+
+**Epoch** -- A defined period of time in the Cardano blockchain, currently set at five days.
+
+**EUTXO (Extended Unspent Transaction Output)** -- Cardano's accounting model that extends the UTXO model with arbitrary logic in scripts and additional output data.
+
+**Fee** -- The cost charged for processing transactions on the blockchain.
+
+**Field-Programmable Gate Array (FPGA)** -- Programmable hardware circuits implementing specific functionality directly in silicon for improved processing speed.
+
+**Formal verification** -- Mathematical proof of program correctness with respect to specifications.
+
+**Front-running** -- The practice of entering into a trade with advance knowledge of pending transactions that will affect price.
+
+**Fungible token** -- An asset that is interchangeable with other identical units, such as currency.
+
+**Genesis block** -- The first block of a blockchain, typically hardcoded into the network's software.
+
+**Goguen** -- The third phase of Cardano development, focusing on smart contract functionality.
+
+**Governance** -- The system of rules, practices, and processes directing and controlling a blockchain network.
+
+**Hard fork** -- A fundamental change to a network's protocol that makes previously invalid blocks valid or vice versa.
+
+**Haskell** -- A statically typed, purely functional programming language used in Cardano's development.
+
+**Hedge** -- A position taken to offset potential losses in another investment.
+
+**High-Frequency Trading (HFT)** -- Rapid trading using sophisticated algorithms, often executing large numbers of orders in fractions of seconds.
+
+**Hot air** -- Carbon offsets that do not represent genuine emissions reductions.
+
+**Hydra** -- A layer 2 scaling solution for Cardano enabling greater transaction throughput.
+
+**Impermanent loss** -- The temporary loss of asset value when providing liquidity to automated market makers compared to holding the assets.
+
+**Incentive** -- A mechanism encouraging network participation through proportional rewards.
+
+**Interoperability** -- The ability of different blockchain systems to exchange and use information.
+
+**IOHK (Input Output Hong Kong)** -- A technology company developing the Cardano platform.
+
+**Layer 1** -- The base blockchain protocol itself, such as Cardano or Bitcoin.
+
+**Layer 2** -- Secondary frameworks or protocols built on top of layer 1 to improve scalability or functionality.
+
+**Ledger** -- A distributed database recording all transactions and account balances.
+
+**Liquidity** -- The degree to which an asset can be quickly bought or sold without causing significant price impact.
+
+**Liquidity pool** -- A collection of crypto assets locked in a smart contract to facilitate trading.
+
+**Market maker** -- An entity providing liquidity to markets by maintaining continuous buy and sell orders.
+
+**Marlowe** -- A domain-specific language for financial smart contracts on Cardano, designed for use by financial professionals.
+
+**Metadata** -- Additional data attached to transactions providing context or supporting smart contract operations.
+
+**Minimum attack vector** -- The smallest number of participants required to potentially compromise network security.
+
+**Mining** -- The process of validating transactions and creating new blocks in proof-of-work blockchains.
+
+**Multi-asset** -- A blockchain's capability to handle multiple types of tokens natively.
+
+**Multi-party computation** -- Cryptographic methods allowing multiple parties to jointly compute functions while keeping inputs private.
+
+**Native tokens** -- Assets that can be created and traded on Cardano without smart contracts, handled directly by the ledger.
+
+**Net-zero** -- A state where greenhouse gas emissions are balanced by removal from the atmosphere.
+
+**Network** -- The technical infrastructure connecting blockchain nodes and their interactions.
+
+**NFT (Non-Fungible Token)** -- A unique digital asset that cannot be replaced with an identical item.
+
+**Node** -- A participant in the blockchain network that validates transactions and blocks.
+
+**Off-chain** -- Computations or data storage occurring outside the blockchain.
+
+**On-chain** -- Activities and data recorded directly on the blockchain.
+
+**Oracle** -- A service providing external data to blockchain smart contracts.
+
+**Ouroboros** -- Cardano's proof-of-stake consensus protocol family, including variants like Classic, Praos, and Genesis.
+
+**P2P (Peer-to-peer)** -- Direct interaction between network participants without intermediaries.
+
+**Parallelism** -- The simultaneous execution of independent computations to improve efficiency.
+
+**Permanent loss** -- The definitive loss of asset value, distinct from temporary impermanent loss in liquidity provision.
+
+**Plomin Hard Fork** is implementing liquid democracy by utilizing bootstrap on-chain governance mechanisms to vote, ratify and enact major changes to the Cardano blockchain. These as being described in the Voltaire era and CIP-1694 documentation. It was originally called Chang 2.
+
+**Plutus** -- Cardano's smart contract platform based on Haskell.
+
+**Proof of stake** -- A consensus mechanism where block creation rights are proportional to cryptocurrency holdings.
+
+**Protocol** -- The set of rules governing how a blockchain network operates.
+
+**Quantitative Finance** -- Mathematical modeling of financial markets and instruments.
+
+**REDD+** -- A UN framework for reducing emissions from deforestation and forest degradation in developing countries.
+
+**Registries** -- Organizations tracking carbon offset projects and issuing verified carbon credits.
+
+**Rewards wallet** -- A wallet capable of participating in stake delegation.
+
+**Saturation** -- The point at which a stake pool has more delegation than optimal for network decentralization, leading to diminishing rewards.
+
+**Script** -- Executable code on the blockchain, written in Plutus Core for Cardano.
+
+**Security token** -- A digital asset representing traditional securities like stocks or bonds.
+
+**Segregated Witness (SegWit)** -- A blockchain upgrade separating signature data from transaction data.
+
+**Shelley** -- The second phase of Cardano development, introducing stake delegation and decentralized block production.
+
+**Slashing** -- A penalty mechanism in some proof-of-stake systems where validators lose staked assets for misbehavior.
+
+**Slippage** -- The difference between expected and actual trading prices due to market movement.
+
+**Slot** -- A fixed period within an epoch during which a block can be created.
+
+**Slot leader** -- A stake pool selected to create a block in a particular slot.
+
+**Smart contract** -- Self-executing code on the blockchain that automatically implements agreement terms.
+
+**SPO (Stake Pool Operator)** -- An entity running a stake pool to create blocks and process transactions.
+
+**Stake** -- Cryptocurrency held by network participants to participate in network consensus and earn rewards.
+
+**Stake pool** -- A node operated by a stake pool operator collecting stake from multiple delegators.
+
+**Staking** -- The act of participating in network consensus by delegating cryptocurrency holdings.
+
+**State channels** -- Layer 2 protocols allowing participants to conduct multiple transactions off-chain before settling on-chain.
+
+**Testnet** -- A blockchain network for testing features before mainnet deployment.
+
+**Token** -- A digital unit representing value or utility on a blockchain.
+
+**Token minting** -- The process of creating new tokens on a blockchain.
+
+**Total Value Locked (TVL)** -- The aggregate value of assets committed to a decentralized finance protocol.
+
+**Transaction** -- A record of value transfer between addresses on the blockchain.
+
+**Treasury** -- A portion of network rewards reserved for future development and sustainability.
+
+**Typescript** is a strongly typed programming language that builds on JavaScript, providing safer smart contract tooling at scale that is very popular across web3 development.
+
+**UTXO (Unspent Transaction Output)** -- The output of a transaction that can be used as input in a new transaction.
+
+**Validator script** -- Code determining conditions for spending transaction outputs in the Extended UTXO model.
+
+**Verification** -- The process of confirming transaction or block validity according to network rules.
+
+**Voltaire** -- The governance phase of Cardano development, introducing voting and treasury systems.
+
+**Wallet** -- Software storing private keys and managing cryptocurrency assets.
+
+**Web3** -- A vision of a decentralized internet built on blockchain technology.
+
+**Yield farming** -- Strategic deployment of crypto assets to maximize returns through various DeFi protocols.
+
+**Zero-knowledge proof** -- A cryptographic method proving knowledge of information without revealing the information itself.
