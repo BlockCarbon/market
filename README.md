@@ -83,7 +83,8 @@ Aiken validator for the carbon registry that:
 
 *Implements main validation logic for*
 
-* Project registration 
+Project registration:
+
 * Verification 
 * Updates 
 * Retirement
@@ -128,44 +129,33 @@ Retirement validator that:
 
 Implements a two-step retirement process:
 
-        ◦ Initial retirement creation with token burning 
+1. Initial retirement creation with token burning 
         
-        ◦ Confirmation with permanent transaction record 
+2. Confirmation with permanent transaction record 
         
 Stores comprehensive retirement data: 
     
-        ◦ Beneficiary information 
-        
-        ◦ Retirement details and messages 
-        
-        ◦ Project references 
-        
-        ◦ Immutable proof of retirement 
+* Beneficiary information        
+* Retirement details and messages       
+* Project references 
+* Immutable proof of retirement 
         
 Provides safety mechanisms: 
     
-        ◦ Pending state for verification 
-        
-        ◦ Emergency cancellation capability 
-        
-        ◦ Validation of token burning 
+* Pending state for verification 
+* Emergency cancellation capability 
+   Validation of token burning 
         
 Creates permanent on-chain records that: 
     
-        ◦ Cannot be modified once confirmed 
-        
-        ◦ Link to the burning transaction 
-        
-        ◦ Maintain complete retirement history 
-
-* Add more detailed retirement metadata handling 
-    
-* Implement batch retirement capabilities 
-    
+* Cannot be modified once confirmed 
+* Link to the burning transaction 
+* Maintain complete retirement history 
+* Add more detailed retirement metadata handling  
+* Implement batch retirement capabilities   
 * Add fee calculation logic 
     
-Create the certificate minting integration
-    
+**Create the certificate minting integration:**
 
 ~~~
 use aiken/hash.{Blake2b_224, Hash}
