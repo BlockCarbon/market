@@ -9,54 +9,23 @@ This whitepaper presents the BlockCarbon Exchange, a decentralized marketplace b
 The primary challenge for decentralized carbon pricing is the reliance on real world validation and the integration of minting and burning (retirement) operations with traditional swapping, farming or transferring of native tokens. We propose a general purpose market place that can integrate with off-chain apps and on-chain validation for typical mechanisms of environmental markets, while not getting in the way of uninterrupted asset exchange and ownership.
 
 
-## Table of Contents
-
-1. [Introduction](#introduction)
-2. [Why a Market for Carbon](#why-a-market-for-carbon)
-   - 2.1 Current Market Challenges
-   - 2.2 The Need for Price Discovery
-   - 2.3 Market Efficiency Through Tokenization
-3. [Real World Assets (RWA)](#real-world-assets)
-   - 3.1 Definition and Scope
-   - 3.2 Tokenization Framework
-   - 3.3 Legal Considerations
-4. [Voluntary Carbon Market Analysis](#voluntary-carbon-market)
-   - 4.1 Market Structure
-   - 4.2 Stakeholder Analysis
-   - 4.3 Current Limitations
-5. [Carbon as an Asset Class](#carbon-as-an-asset-class)
-   - 5.1 Investment Characteristics
-   - 5.2 Price Formation
-   - 5.3 Market Correlation Analysis
-6. [Web3 and Regenerative Finance](#web3-and-regenerative-finance)
-   - 6.1 Blockchain Technology Stack
-   - 6.2 Smart Contract Architecture
-   - 6.3 Token Economics
-7. [Marketplace Design](#marketplace-design)
-   - 7.1 Technical Architecture
-   - 7.2 Order Matching System
-   - 7.3 Liquidity Mechanisms
-8. [BlockCarbon Token](#blockcarbon-token)
-   - 8.1 Token Structure
-   - 8.2 Governance Model
-   - 8.3 Economic Model
-9. [Jurisdictions and Validation](#jurisdictions-and-validation)
-   - 9.1 Regulatory Framework
-   - 9.2 Validation Process
-   - 9.3 Compliance Mechanisms
-10. [Technical Implementation](#technical-implementation)
-    - 10.1 Smart Contract Architecture
-    - 10.2 Oracle Integration
-    - 10.3 Security Considerations
-11. [Conclusion](#conclusion)
-12. [Glossary](#glossary)
-    
-
 ## 1. Introduction
 
-The global carbon market stands at a critical juncture, with increasing demand for transparent, efficient mechanisms to trade carbon credits. Traditional carbon markets suffer from opacity, high transaction costs, and limited accessibility. BlockCarbon addresses these challenges through a blockchain-based solution built on Cardano's robust technical infrastructure.
+The global carbon market received a major boost from the 2024 United Nations Climate Change Conference in Baku Azerbaijan. Delegates agreed on a broader contributor base and more concrete steps to integrate carbon markets than the prior 2015 Paris Agreement setting a so-called New Collective Quantified Goal (NCQG) for Climate Finance. This is highly likely to further increase demand for transparent, efficient mechanisms to trade carbon credits. Traditional carbon markets suffer from opacity, high transaction costs, and limited accessibility. BlockCarbon addresses these challenges through a blockchain-based solution built on Cardano's robust technical infrastructure.
 
-This whitepaper presents a comprehensive framework for tokenizing and trading carbon credits on the Cardano blockchain, leveraging its unique features such as the Extended UTXO model, deterministic smart contracts, and Native Token functionality. Our solution provides a bridge between traditional carbon markets and decentralized finance (DeFi) while ensuring regulatory compliance and market integrity.
+The BlockCarbon platform leverages Cardano's technological infrastructure to create a robust and scalable carbon credit marketplace. The implementation utilizes a multi-layered architecture that ensures security, scalability, and interoperability:
+
+**Settlement Layer**: The foundation comprises Cardano's Settlement Layer, which handles the secure recording of all carbon credit transactions through its Extended UTXO model. This model provides superior transaction parallelism and deterministic fee structures compared to account-based models, enabling efficient market operations.
+Computation Layer: Smart contracts governing carbon credit trades are implemented using Plutus, Cardano's native smart contract platform. The deterministic nature of Plutus contracts ensures predictable execution costs and eliminates common vulnerabilities found in other smart contract platforms.
+
+**Integration Layer**: A specialized middleware layer facilitates interaction between on-chain carbon credit tokens and off-chain validation systems. This layer implements oracle networks for real-time price feeds and verification status updates from authorized carbon credit registries.
+
+The smart contract architecture implements a hybrid validation model that combines the efficiency of centralized verification with the transparency of decentralized execution. The core components include:
+
+Registry Contract: A foundational contract that maintains the mapping between physical carbon credits and their tokenized representations. 
+
+Trading Contract: Manages the automated market making functions and implements a novel price discovery mechanism optimized for carbon credit characteristics.
+
 
 ## 2. Why a Market for Carbon
 
