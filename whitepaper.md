@@ -139,6 +139,10 @@ Real World Assets in the context of carbon markets encompass:
 - Project-specific carbon assets
 - Compliance market instruments
 
+To allow the *tokenization* of carbon, we need to define and identify the real world asset clearly, and then create a digital representation on the blockchain. Some assets are easier to tokenize than others. For example, a clearly defined emissions allowance certificate that exists within a clear legal framework can easily be tokenized by its owner - for example 1 contract of the Emissions Trading Scheme in the EU, New Zealand or South Korea cover 1000 metric tonnes of CO2 equivalent could be minted into 1000 fungible tokens on Cardano. If these rights are less clearly defined in the real world, for example the climate benefits that belong to a forest owner where no government regulation for this exists yet, need to be very clearly defined as part of the minting process to ensure the on-chain representation will have value and maintain their rights to any "credits" or "benefits" once such a framework comes into place. If these rights are transferred in the meantime, the transfer of the tokens need to ensure that all rights of the initial minting and representation agreement are transferred as well. 
+
+If done right, asset tokenization opens up entirely new financial markets and novel instruments or use cases, as disconnected or opaque bilateral agreements suddenly trade on a shared settlement layer and cross-asset comparison, arbitrage and pooling will become possible. As shown in the example above, large contracts can be fractionalized and sold to smaller investors, supporting liquditity and fairness.
+
 ### 3.2 Tokenization Framework
 
 The tokenization process involves:
