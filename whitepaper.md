@@ -36,7 +36,17 @@ To better understand the requirements and challenges of a carbon credit market p
   
 ## 2. Why a Market for Carbon
 
-### 2.1 Current Market Challenges
+### 2.1 The Need for Price Discovery
+
+Efficient price discovery mechanisms are crucial for:
+
+- Accurate valuation of carbon reduction initiatives
+- Strategic planning for emission reduction projects
+- Investment decision-making in sustainable technologies
+- Market signal generation for policy frameworks
+- Capital allocation optimization
+- 
+### 2.2 Current Market Challenges
 
 The existing carbon market infrastructure faces several critical challenges:
 
@@ -46,15 +56,7 @@ The existing carbon market infrastructure faces several critical challenges:
 - Lack of standardization in credit validation and trading
 - Insufficient transparency in price discovery mechanisms
 
-# Carbon Market Design: From Global Framework to Blockchain Implementation
-
-## The Baku Paradigm Shift
-
-The Baku COP29 climate conference in November 2024 marked a watershed moment for global carbon markets, establishing foundational rules for a unified carbon credit trading system. This breakthrough agreement, culminating a decade of international negotiations, introduces two parallel mechanisms that directly inform our blockchain architecture design: a centralized UN trading system and a bilateral trading framework for direct country-to-country transactions.
-
-The dual-system approach presents a unique opportunity for blockchain implementation. While the centralized UN system provides standardization and oversight, the bilateral framework enables innovation in trading mechanisms—precisely where distributed ledger technology excels. This regulatory evolution creates an ideal environment for deploying smart contract-based trading solutions that can bridge both systems while maintaining security and transparency.
-
-## Market Dynamics and Technological Imperatives
+## 2.3 Market Dynamics and Technological Imperatives
 
 Current carbon pricing mechanisms cover approximately 24% of global emissions through 78 distinct systems—a fragmentation that highlights the need for technological unification. The EU's Emissions Trading System demonstrates the potential, achieving a 40% emissions reduction since 2005. However, this success also reveals the limitations of centralized systems and the imperative for more sophisticated trading infrastructure.
 
@@ -66,7 +68,7 @@ Our blockchain architecture addresses three critical market requirements emergin
 
 3. Flexible Integration: The compromise between US autonomy and EU oversight demands adaptable systems. Our protocol implements configurable governance parameters that accommodate varying regulatory requirements while maintaining operational consistency.
 
-## Economic Foundations and Market Evolution
+## 2.4 Economic Foundations and Market Evolution
 
 The fundamental economic case for carbon pricing has achieved rare consensus among economists. This agreement, coupled with expanding global carbon pricing mechanisms, creates a compelling case for technological infrastructure that can scale with market growth. Current projections indicate potential market values of $250 billion annually by 2030, with offset capacity reaching 5 billion metric tons of carbon emissions.
 
@@ -76,7 +78,7 @@ Our design anticipates this scale through:
 - Cross-Border Settlement Systems: Smart contract frameworks that handle international transactions while respecting jurisdictional requirements
 - Dynamic Pricing Mechanisms: Oracle networks that aggregate global carbon price data to ensure efficient market operation
 
-## Technological Innovation for Market Integrity
+## 2.5 Technological Innovation for Market Integrity
 
 The Baku agreement's emphasis on credit credibility aligns perfectly with blockchain's inherent strengths. Our implementation leverages Cardano's Extended UTXO model to create verifiable links between physical carbon reduction projects and their digital representations. This approach solves several persistent market challenges:
 
@@ -84,7 +86,7 @@ The Baku agreement's emphasis on credit credibility aligns perfectly with blockc
 2. Project Verification: Integrated oracle networks provide real-time monitoring of carbon reduction projects
 3. Permanent Record Keeping: Immutable transaction histories enable unprecedented auditability
 
-## Forward-Looking Market Infrastructure
+## 2.6 Forward-Looking Market Infrastructure
 
 As global carbon markets mature, our blockchain infrastructure positions stakeholders to capitalize on emerging opportunities while ensuring regulatory compliance. The system's modular design accommodates future developments, including:
 
@@ -95,15 +97,7 @@ As global carbon markets mature, our blockchain infrastructure positions stakeho
 
 The convergence of regulatory clarity from Baku and Cardano's technical capabilities creates an unprecedented opportunity to establish a new standard in carbon market infrastructure. Our design synthesizes these elements into a cohesive system that serves both immediate market needs and long-term sustainability goals.
 
-### 2.2 The Need for Price Discovery
 
-Efficient price discovery mechanisms are crucial for:
-
-- Accurate valuation of carbon reduction initiatives
-- Strategic planning for emission reduction projects
-- Investment decision-making in sustainable technologies
-- Market signal generation for policy frameworks
-- Capital allocation optimization
 
 ### 2.3 Market Efficiency Through Tokenization
 
@@ -186,6 +180,12 @@ Blockchain technology offers a solution to these historical shortcomings, but on
 The potential transformation extends far beyond simple digitalization. Where traditional assets represent mere database entries, viewed through privileged terminals and managed reactively, tokenized assets can embed sophisticated risk management features and eliminate information asymmetry. This consolidation of fragmented information into cohesive, self-contained assets represents a fundamental advance in financial infrastructure.
 
 ## 4. Voluntary Carbon Market Analysis
+
+## The Baku Paradigm Shift
+
+The Baku COP29 climate conference in November 2024 marked a watershed moment for global carbon markets, establishing foundational rules for a unified carbon credit trading system. This breakthrough agreement, culminating a decade of international negotiations, introduces two parallel mechanisms that directly inform our blockchain architecture design: a centralized UN trading system and a bilateral trading framework for direct country-to-country transactions.
+
+The dual-system approach presents a unique opportunity for blockchain implementation. While the centralized UN system provides standardization and oversight, the bilateral framework enables innovation in trading mechanisms—precisely where distributed ledger technology excels. This regulatory evolution creates an ideal environment for deploying smart contract-based trading solutions that can bridge both systems while maintaining security and transparency.
 
 ### 4.1 Market Structure
 
