@@ -1,5 +1,7 @@
 # Anastasia Labs - Streamlining Development: A User-Friendly Smart Contract Library for Plutarch and Aiken Design Patterns & Efficiency
 
+This open source proposal by Anastasia Labs from Fund-10 deals with relatively advanced and specialized expert use cases to improve efficiency. It is targeted at expert Cardano developer to apply unintuitive but highly beneficial code improvements. Minting policies and redeemer indexing are applicable for carbon token on-chain registration so we have included this as it also helps deepen the understanding of Aiken which is likely to become the dominant smart contract language for real world assets.
+
 [Design Patterns Github Repo](https://github.com/Anastasia-Labs/design-patterns)
 
 Two wrapper libraries for Plutarch and Aiken smart contracts, that streamline development by abstracting unintuitive design patterns.
