@@ -18,6 +18,8 @@ The BlockCarbon platform leverages Cardano's technological infrastructure to cre
 **Settlement Layer**: The foundation comprises Cardano's Settlement Layer, which handles the secure recording of all carbon credit transactions through its Extended UTXO model. This model provides superior transaction parallelism and deterministic fee structures compared to account-based models, enabling efficient market operations.
 Computation Layer: Smart contracts governing carbon credit trades are implemented using Plutus, Cardano's native smart contract platform. The deterministic nature of Plutus contracts ensures predictable execution costs and eliminates common vulnerabilities found in other smart contract platforms.
 
+![Mint](https://github.com/BlockCarbon/market/blob/main/media/MINTING%20PROCESS%20FLOW.png)
+
 **Integration Layer**: A specialized middleware layer facilitates interaction between on-chain carbon credit tokens and off-chain validation systems. This layer implements oracle networks for real-time price feeds and verification status updates from authorized carbon credit registries.
 
 The smart contract architecture implements a hybrid validation model that combines the efficiency of centralized verification with the transparency of decentralized execution. The core components include:
