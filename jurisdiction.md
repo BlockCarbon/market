@@ -179,8 +179,7 @@ Robust banking system
 Advanced trading infrastructure
 Growing green finance initiatives
 
-Challenges:
-
+**Challenges**:
 Political uncertainty affecting long-term planning
 Complex relationship with mainland China regulations
 Higher operational costs
@@ -196,14 +195,14 @@ Hong Kong's position as a bridge between traditional finance and emerging crypto
 
 The ability to attract and retain skilled professionals varies significantly by jurisdiction:
 
-- Singapore: Deep talent pool but high competition
-- Germany: Strong technical talent but language barriers
-- Estonia: Growing tech talent but limited specialized expertise
-- Switzerland: Excellent talent but very expensive
-- UAE: Growing talent pool but need for expatriate expertise
-- Gibraltar: Limited local pool but strong ability to attract remote talent
-- Malta: Growing fintech talent pool with EU mobility advantages
-- Hong Kong: Deep financial expertise with increasing blockchain talent influx
+* Singapore: Deep talent pool but high competition
+* Germany: Strong technical talent but language barriers
+* Estonia: Growing tech talent but limited specialized expertise
+* Switzerland: Excellent talent but very expensive
+* UAE: Growing talent pool but need for expatriate expertise
+* Gibraltar: Limited local pool but strong ability to attract remote talent
+* Malta: Growing fintech talent pool with EU mobility advantages
+* Hong Kong: Deep financial expertise with increasing blockchain talent influx
 
 ### Infrastructure and Technology
 
