@@ -2,7 +2,9 @@
 
 MeshJS is an incredibly useful open source project with libraries that offer a comprehensive stack to deploy on Cardano with ease. For the **Blockcarbon Market**, this has been an top resource and this Fund-10 project added far more functionality, fixed issues and maintained the stack into the Conway Era. 
 
-**The Solution"**
+
+**Library Development through Catalyst**
+
 To guarantee and ensure sustainability of a team dedicated to maintaining and developing one of the best open-source libraries on Cardano, providing devs with something easy-to-use, fun and productive.  The Mesh team aims to provide the most comprehensive and easy-to-use SDK for practical dApp development on Cardano, accessible to new and experienced developers alike, with a complete and high-quality set of documentation and supporting resources. With this proposal we are applying for funding to be able to sustainably maintain and continue to improve the MeshJS projects. The requested funds will enable not only the continued development, but also guarantee additional operational processes can be covered, thus allowing the team to widen and increase community engagements and to engage and level up an active open source developer community at MeshJS.
 
 
@@ -17,3 +19,31 @@ Mesh is dedicated to creating the best and most accessible open-source tools and
 [CIP-30 Browser Wallet API](https://meshjs.dev/apis/wallets/browserwallet)
 
 [Building Transactions using Aiken](https://meshjs.dev/aiken/transactions)
+
+Sample usage to get UTxO:
+
+~~~
+async function getAssetUtxo({
+  scriptAddress,
+  asset,
+  datum,
+}: {
+  scriptAddress: string;
+  asset: string;
+  datum: any;
+}) {
+  const blockchainProvider = getProvider();
+  const utxos = await blockchainProvider.fetchAddressUTxOs(
+    scriptAddress,
+    asset,
+  );
+
+  const dataHash = resolveDataHash(datum);
+
+  let utxo = utxos.find((utxo: any) => {
+    return utxo.output.dataHash == dataHash;
+  });
+
+  return utxo;
+}
+~~~
