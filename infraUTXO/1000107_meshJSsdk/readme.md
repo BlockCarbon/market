@@ -4,3 +4,13 @@ To guarantee and ensure sustainability of a team dedicated to maintaining and de
 
 
 Mesh is dedicated to creating the best and most accessible open-source tools and libraries. Feedback from developers has shown us that among their top priorities are fixing bugs in the codebase and some technical features. All of these involve time-consuming (and not always fun) efforts: fixing the bugs themselves can be laborious and difficult, but also just reading through and responding to PR’s (“Pull Requests'' - code adjustment proposals on Github), improving & updating code, creating and updating documentation, tutorials and other supporting materials. As you can see, there is a significant amount of continuous work required in keeping MeshJS up-to-date and useful, even before one considers code testing and development of new features according to cardano blockchain updates/hard forks.
+
+[Open source MeshJS repository](https://github.com/MeshJS/mesh)
+
+[MeshJS Playground Contracts: Marketplace](https://meshjs.dev/smart-contracts/marketplace)
+
+[MeshJS Playground Contracts: Swap](https://meshjs.dev/smart-contracts/swap)
+
+[CIP-30 Browser Wallet API](https://meshjs.dev/apis/wallets/browserwallet)
+
+[Building Transactions using Aiken](https://meshjs.dev/aiken/transactions)
