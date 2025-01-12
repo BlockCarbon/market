@@ -22,7 +22,7 @@ Mesh is dedicated to creating the best and most accessible open-source tools and
 
 Sample usage to get UTxO:
 
-~~~
+```typescript
 async function getAssetUtxo({
   scriptAddress,
   asset,
@@ -46,4 +46,4 @@ async function getAssetUtxo({
 
   return utxo;
 }
-~~~
+```
