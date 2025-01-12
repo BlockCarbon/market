@@ -20,9 +20,16 @@ Charli3 Dendrite currently supports the following Cardano DEXs:
 * Axo
 
 **Key Features**
+
 🔄 Multi-DEX Support: Integrate with Minswap, MuesliSwap, Spectrum, SundaeSwap, VyFi, GeniusYield, Axo, and WingRiders
+
 💧 Liquidity Pool Data: Fetch and analyze pool information across different DEXs
+
 💱 Swap Operations: Execute token swaps with ease
+
 🧩 Flexible Asset Handling: Manage various asset types and pool states efficiently
+
 🔗 On-chain Data Integration: Connect with DB-sync, BlockFrost, and Ogmios/Kupo
+
 🛠 Extensible Architecture: Easily add support for new DEXs and features
+
