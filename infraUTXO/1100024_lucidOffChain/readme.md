@@ -6,8 +6,11 @@ This project introduces Lucid to **Blockcarbon Market** which used to be the go-
 
 It is also unique in the depth it deals with [SanchoNet](https://sancho.network/) and Volatire features that will fully introduce liquid democracy after the Plomin Hard Fork end of January 2025.
 
+![SanchoBoat](https://github.com/BlockCarbon/market/blob/main/media/boat-e97f1487ae71c4dd5e669a478dfb0179.png)
+
 [Open source repository](https://github.com/Anastasia-Labs/lucid-evolution)
 
+**Achievements of this project**
 [Updated/Enhanced Lucid Documentation](https://github.com/Anastasia-Labs/lucid-evolution/blob/main/README.md)
 Identification of Missing Functions: Conduct a comprehensive analysis of the Lucid framework to identify gaps in utility and convenience functions that hinder efficient development.]
 Function Design: Develop a design proposal outlining the new utility functions to be implemented, with a focus on simplifying common design patterns, such as passing indices in the transaction redeemer.
