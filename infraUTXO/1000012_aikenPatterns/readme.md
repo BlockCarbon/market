@@ -10,7 +10,7 @@ Two wrapper libraries for Plutarch and Aiken smart contracts, that streamline de
 
 Project is fully open source.
 
-Two smart contract libraries (to support Plutarch and Aiken) to abstract away unintuitive design patterns that even some of the best developers in the ecosystem don't know (because of how bizarre they are).
+Two smart contract libraries (to support Plutarch and Aiken) to abstract away unintuitive design patterns that even some of the best developers in the ecosystem don't know (because of how bizarre they are). *This aspect makes the project less suitable for a carbon token marketplace, as we do not necessarily want performance gains from bizarreness but rather clarity and interoperability. Nonetheless, there is little else yet in terms of design patterns for Aiken, and this is a fantastic resource to deepen your understanding about its validator scripts at work.*
 
 This includes:
 
