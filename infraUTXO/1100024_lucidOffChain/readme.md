@@ -11,19 +11,30 @@ It is also unique in the depth it deals with [SanchoNet](https://sancho.network/
 [Open source repository](https://github.com/Anastasia-Labs/lucid-evolution)
 
 **Achievements of this project**
-[Updated/Enhanced Lucid Documentation](https://github.com/Anastasia-Labs/lucid-evolution/blob/main/README.md)
+
+[Major relaunch of the official Docs](https://anastasia-labs.github.io/lucid-evolution/)
+
+[Updated/Enhanced Lucid project](https://github.com/Anastasia-Labs/lucid-evolution/blob/main/README.md)
+
 Identification of Missing Functions: Conduct a comprehensive analysis of the Lucid framework to identify gaps in utility and convenience functions that hinder efficient development.]
+
 Function Design: Develop a design proposal outlining the new utility functions to be implemented, with a focus on simplifying common design patterns, such as passing indices in the transaction redeemer.
+
 Implementation: Code and integrate the proposed utility functions into the Lucid framework to streamline tasks like sorting inputs by TxOutRef's, indexing, and balancing.
 Testing Suite: Develop a robust testing suite to ensure the functionality, correctness, and efficiency of the newly implemented utility functions.
 Synced CML from DCSpark Repository
+
 Lucid updated to synchronize with the latest Cardano Multiplatform Library (CML) from the [DCSpark repository](https://github.com/dcSpark/cardano-multiplatform-lib).
-Upgraded Lucid CML for Chang Hard Fork
+
+**Upgraded Lucid CML for Chang Hard Fork**
+
 Lucid integrated with the latest Conway functions in anticipation of the Chang Hard Fork.
 Ensured compatibility with the evolving Cardano protocol.
 Rigorous testing of SanchoNet features integrated with Lucid.
 Identification and resolution of any bugs or issues.
-Polished SanchoNet Features
+
+**Polished SanchoNet Features**
+
 Fine-tuning and optimization of SanchoNet features for optimal performance.
 Ensured a smooth and user-friendly experience for developers using Lucid.
 Verified functionality and reliability of SanchoNet features within Lucid.
