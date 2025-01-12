@@ -3,6 +3,23 @@ Development of hybrid market place technology for Cardano carbon credit tokeniza
 
 We take a look at best practise industry carbon registry, token minting policy and retirement contracts and adjust them for the UTxO model and its advantages. Meant for discussion of progressive elements and testnet implementation as well as Python or Typescript deployment like [Opshin](https://github.com/OpShin/opshin), [MeshJS](https://meshjs.dev/).
 
+**Design Requirements:**
+* prevent “sweeping the floor”, old-vintage, low-quality, unsustainable or dubious carbon credits
+* reduce reliance on single or few third party verification services, or those with dubious reputation
+*  enable new technologies or native verification solutions without diluting quality (AI, IoT etc)
+* compliance with existing schemes (implicitly but not explicitly) for “desirable” stakeholders
+* not too complex, confusing
+* fast arbitration, legal clarity
+* risk management of systemic failures
+      
+
+### Fungibility trade-off
+
+### Adjustment mechanisms
+
+### Transparent supply reporting – all minting, retirement and adjustment
+
+
 ## BlockCarbon Introduction
 The uncontrolled emission of carbon dioxide and other greenhouse gases (GHG) into the atmosphere has led to disastrous consequences, including rising temperatures, extreme weather events, and the loss of biodiversity. The urgent need to mitigate climate change has resulted in the development of various carbon offset programs that allow individuals and organizations to compensate for their carbon emissions by supporting projects that reduce GHG emissions or remove carbon from the atmosphere. However, existing carbon offset programs often lack transparency, accountability, and traceability. The traditional carbon offset market is rife with inefficiencies, opaque processes, and centralized intermediaries. BlockCarbon is responding to the urgent need for a decentralized, transparent, and secure solution for carbon offsets and investable carbon.
 
