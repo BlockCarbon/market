@@ -101,17 +101,10 @@ As global carbon markets mature, our blockchain infrastructure positions stakeho
 
 The convergence of regulatory clarity from Baku and Cardano's technical capabilities creates an unprecedented opportunity to establish a new standard in carbon market infrastructure. Our design synthesizes these elements into a cohesive system that serves both immediate market needs and long-term sustainability goals.
 
+### 2.7 Market Efficiency Through Tokenization
 
+Blockchain technology enables the pricing of carbon in ways that were previously not possible. Real time settlement is a major safeguard against opaque reporting or trading of already retired credits - whatever the ledger shows can be trusted. Reduced intermediary costs are a common reason for DeFi, but in voluntary carbon issuance this can often mean much larger savings, especially in over the counter or retail markets, where these fees can run up to 20%. These reasons by themselves are powerful arguments for bringing carbon credits on-chain as part of the Real World Assets boom, but even more importantly is the untapped buying power of young, tech savvy consumers, tech companies, blockchains and their foundations, as well as speculative or climate conscious crypto investors.
 
-### 2.3 Market Efficiency Through Tokenization
-
-Blockchain technology enables:
-
-- Automated market making mechanisms
-- Reduced intermediary costs
-- Real-time settlement
-- Transparent price discovery
-- Improved market accessibility
 
 ## 3. Real World Assets (RWA)
 
