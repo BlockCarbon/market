@@ -1,7 +1,7 @@
 # BlockCarbon Market
-Development of hybrid market place technology for Cardano carbon credit tokenization.
+Development of hybrid market place research and blueprints for Cardano carbon credit tokenization. 
 
-We take a look at best practise industry carbon registry, token minting policy and retirement contracts and adjust them for the UTxO model and its advantages. Meant for discussion of progressive elements and testnet implementation as well as Python or Typescript deployment like [Opshin](https://github.com/OpShin/opshin), [MeshJS](https://meshjs.dev/).
+We take a look at best practise industry carbon registry, token minting policy and retirement contracts and adjust them for the UTxO model and its advantages. Meant for discussion of progressive elements and testnet implementation as well as Python or Typescript deployment like [Opshin](https://github.com/OpShin/opshin), [MeshJS](https://meshjs.dev/). Carbon token minting, swapping, retirement and adjustment mechanisms on-chain are demonstrated in [Aiken smart contract language](https://aiken-lang.org/) and web-app leverages [React](https://react.dev/) framework.
 
 **Design Requirements:**
 * prevent “sweeping the floor”, old-vintage, low-quality, unsustainable or dubious carbon credits
