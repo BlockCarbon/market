@@ -12,6 +12,12 @@ We take a look at best practise industry carbon registry, token minting policy a
 * fast arbitration, legal clarity
 * risk management of systemic failures
       
+***
+
+**Structure**
+
+***
+
 
 ### Fungibility trade-off
 
