@@ -3,7 +3,7 @@ An extensive summary report and discussion of previous market venue related gran
 
 ![DApp](https://github.com/BlockCarbon/market/blob/main/media/utxoDapp.jpg)
 
-**List of all open source contributors:**
+**List of all open source projects used/quoted/studied:**
 
 * ADA Anvil
 * Anastasia Labs
@@ -18,10 +18,10 @@ An extensive summary report and discussion of previous market venue related gran
 * Trust Level
 * Sundae Labs
 
-[Your requests and feedback](https://forms.gle/JYBmHYfvvnVsr5xN7)
 
 ![x](http://i.imgur.com/tXSoThF.png)
-[Or provide Feedback / Request feature on X](https://twitter.com/carbonblock)
+
+[Please provide Feedback / propose collabs on X](https://twitter.com/carbonblock)
 
 
 ## Structure
