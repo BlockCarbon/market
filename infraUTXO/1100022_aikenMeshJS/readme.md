@@ -1,8 +1,8 @@
 # Aiken Open-Source Smart Contract Library
 
-Although limited in the provision of use case benchmarks, the quality and documentation of this project makes it a valuable addition to build intuition and basic validator scallfolding for the **Blockcarbon Market**. 
+Although limited in the provision of use case benchmarks, the quality and documentation of this project makes it a valuable addition to build intuition and basic validator scallfolding for the **BlockCarbon Market**. 
 
-collection of open-source smart contracts with Aiken including Workspace, Mesh TX builder components, and integrate them into the Mesh SDK library on Github - open and accessible to all.
+Collection of open-source smart contracts with Aiken including Workspace, Mesh TX builder components, and integrate them into the Mesh SDK library on Github - open and accessible to all.
 
 [Open source repository](https://github.com/MeshJS/mesh/tree/main/packages/mesh-contract)
 
