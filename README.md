@@ -14,7 +14,7 @@ We take a look at best practise industry carbon registry, token minting policy a
       
 ***
 
-**Structure**
+## **Structure**
 
 ## Technical report ("Whitepaper")
 
