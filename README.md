@@ -14,19 +14,19 @@ We take a look at best practise industry carbon registry, token minting policy a
       
 ***
 
-## **Structure**
+## **Structure:**
 
-## Technical report ("Whitepaper")
+## 1. Technical report ("Whitepaper")
 
 [Link to markdown Technical Report](https://github.com/BlockCarbon/market/blob/main/whitepaper.md)
 
 
-## Jurisdiction research
+## 2. Jurisdiction research
 
 [Link to markdown Jurisdiction Report](https://github.com/BlockCarbon/market/blob/main/jurisdiction.md)
 
 
-## Prototype designs ("MVP")
+## 3. Prototype designs ("MVP")
 
 [Link to Token Dashboard](https://new-bc-marketplace.vercel.app/token-management)
 
