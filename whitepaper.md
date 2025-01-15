@@ -32,6 +32,9 @@ Trading Contract: Manages the automated market making functions and implements a
 
 To better understand the requirements and challenges of a carbon credit market place, its integration into a blockchain settlement and exchange layer, and Cardano's UTxO model and native token capabilities and smart contract languages, we need to first consider:
 
+![Tokens](https://github.com/BlockCarbon/market/blob/main/media/Blockcarbon%20MVP%20FLow.png)
+
+
 * The history of climate mitigation and carbon as a proxy for greenhouse gases
 * Failures and successess of Kyoto Protocol, Paris Agreement and voluntary (corporate and consumer) offsetting
 * Prior solutions to solve legacy market problems using blockchain and what has held them back
