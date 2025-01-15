@@ -13,6 +13,7 @@ An extensive summary report and discussion of previous market venue related gran
 * IAMX
 * MeshJS
 * MLabs
+* MuesliSwap
 * Niels Mündler
 * NMKR
 * Trust Level
