@@ -34,11 +34,7 @@ To better understand the requirements and challenges of a carbon credit market p
 
 ![Tokens](https://github.com/BlockCarbon/market/blob/main/media/Blockcarbon%20MVP%20FLow.png)
 
-
-* The history of climate mitigation and carbon as a proxy for greenhouse gases
-* Failures and successess of Kyoto Protocol, Paris Agreement and voluntary (corporate and consumer) offsetting
-* Prior solutions to solve legacy market problems using blockchain and what has held them back
-* The unique characteristics of Cardano, and its challenges and game changing advantages
+Permissionless addition of tokens based on criteria for different layers of the carbon market - with spreads likely to develop to trade higher tiers of qualification at a premium.
 
   
 ## 2. Why a Market for Carbon
@@ -62,6 +58,12 @@ The existing carbon market infrastructure faces several critical challenges:
 - High transaction costs due to multiple intermediaries
 - Lack of standardization in credit validation and trading
 - Insufficient transparency in price discovery mechanisms
+
+* The history of climate mitigation and carbon as a proxy for greenhouse gases
+* Failures and successess of Kyoto Protocol, Paris Agreement and voluntary (corporate and consumer) offsetting
+* Prior solutions to solve legacy market problems using blockchain and what has held them back
+* The unique characteristics of Cardano, and its challenges and game changing advantages
+  
 
 ## 2.3 Market Dynamics and Technological Imperatives
 
