@@ -28,6 +28,8 @@ We take a look at best practise industry carbon registry, token minting policy a
 
 ## 3. Prototype designs ("MVP")
 
+[Main App Landing Page](https://new-bc-marketplace-git-main-blockcarbon.vercel.app/#)
+
 [Link to Token Dashboard](https://new-bc-marketplace.vercel.app/token-management)
 
 [Repository of the React dApp](https://github.com/BlockCarbon/new_bc_marketplace)
