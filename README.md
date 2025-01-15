@@ -194,7 +194,7 @@ Creates permanent on-chain records that:
     
 **Create the certificate minting integration:**
 
-~~~
+```rust
 use aiken/hash.{Blake2b_224, Hash}
 use aiken/list
 use aiken/transaction.{ScriptContext}
@@ -352,12 +352,12 @@ fn validate_project_data(project: ProjectData) -> Bool {
 // 2. Complex fee structure - Will be implemented in separate validator
 // 3. ERC20 converter - Will be handled by native token minting policy
 // 4. Certificate NFTs - Will be separate validator
-~~~
+```
 
 ### MeshJS or OpShin/Python Deploy Scripts
 This basic Python script *deploy.py* can be used experimentally (Testnet only)
 
-~~~
+```python
 import subprocess
 import sys
 from web3 import Web3
@@ -400,7 +400,7 @@ if __name__ == "__main__":
         deploy_solidity_contract()
     elif sys.argv[1] == "move":
         deploy_move_contract()
-~~~
+```
 
 This script provides a simple way to deploy a carbon offset smart contract using either Aiken or another validator language by choice. It requires the user to adjust the CLI command based on the specific environment and setup. 
 
