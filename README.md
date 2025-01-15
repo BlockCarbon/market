@@ -18,6 +18,8 @@ We take a look at best practise industry carbon registry, token minting policy a
 
 ## 1. Technical report ("Whitepaper")
 
+A lot has changed since BlockCarbon launched in 2021, and despite bullish markets for crypto and digital assets, voluntary carbon credit tokens on other blockchains launched in that year are down over 90%. To adjust to the lastest COP29 Baku roadmap of the United Nations and changing views from corporate clients towards their ESG strategies, we have carried out a thorough market analysis. We have also adjusted our tech stack to fit with a Cardano technology that is about to complete its third hard fork, with the rise of the Aiken smart contract language. This research can be found inside this repository or via the link below:
+
 [Link to markdown Technical Report](https://github.com/BlockCarbon/market/blob/main/whitepaper.md)
 
 
