@@ -48,7 +48,8 @@ Efficient price discovery mechanisms are crucial for:
 - Investment decision-making in sustainable technologies
 - Market signal generation for policy frameworks
 - Capital allocation optimization
-- 
+
+  
 ### 2.2 Current Market Challenges
 
 The existing carbon market infrastructure faces several critical challenges:
@@ -86,6 +87,11 @@ Our design anticipates this scale through:
 - Automated Market Making Protocols: Specialized algorithms optimize liquidity across varying credit qualities and vintages
 - Cross-Border Settlement Systems: Smart contract frameworks that handle international transactions while respecting jurisdictional requirements
 - Dynamic Pricing Mechanisms: Oracle networks that aggregate global carbon price data to ensure efficient market operation
+
+Despite best intentions, previous attempts to bring voluntary carbon credits that can serve as an internal "zero emissions" fast-track for corporations or consumers on-chain have not worked out as expected. Starting trading around $5/mt CO2 for basic offsets like energy efficiency or hydropower and $12/mt for nature based reforestation projects, prices trended lower regardless of crypto trends or other legacy carbon markets as the acceptance off-chain was [severed](https://www.spglobal.com/commodity-insights/en/news-research/latest-news/energy-transition/052522-as-verra-halts-tokenization-of-carbon-credits-toucan-vows-to-keep-web3-ethos-alive) by the largest registry Verra in May 2022.
+
+![ERC20](https://github.com/BlockCarbon/market/blob/main/media/erc20Tokens.jpg)
+
 
 ## 2.5 Technological Innovation for Market Integrity
 
