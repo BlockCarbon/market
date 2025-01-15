@@ -16,6 +16,22 @@ We take a look at best practise industry carbon registry, token minting policy a
 
 **Structure**
 
+## Technical report ("Whitepaper")
+
+[Link to markdown Technical Report](https://github.com/BlockCarbon/market/blob/main/whitepaper.md)
+
+
+## Jurisdiction research
+
+[Link to markdown Jurisdiction Report](https://github.com/BlockCarbon/market/blob/main/jurisdiction.md)
+
+
+## Prototype designs ("MVP")
+
+[Link to Token Dashboard](https://new-bc-marketplace.vercel.app/token-management)
+
+[Repository of the React dApp](https://github.com/BlockCarbon/new_bc_marketplace)
+
 ***
 
 
@@ -90,12 +106,6 @@ In conclusion, high carbon prices or taxes can potentially lead to emissions lea
 2. Legal framework understanding required for token design
 3. Infrastructure analysis needed for marketplace design
 4. Stakeholder feedback required for final recommendations
-
-## Next Steps
-1. Establish project team and roles
-2. Set up project management infrastructure
-3. Begin stakeholder engagement
-4. Initiate market research phase
 
 
 ### Validator Design
