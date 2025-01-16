@@ -25,10 +25,21 @@ A lot has changed since BlockCarbon launched in 2021, and despite bullish market
 
 ## 2. Jurisdiction research
 
+The selection of a legal jurisdiction for a carbon token exchange and marketplace requires careful consideration of multiple factors beyond the typical considerations for token issuance. This report analyzes key jurisdictions suitable for establishing a carbon token trading venue, with special attention to hybrid models combining decentralized trading with KYC requirements. The analysis considers regulatory frameworks, talent pools, technological infrastructure, and reputational aspects alongside traditional factors like taxation and legal compliance.
+
 [Link to markdown Jurisdiction Report](https://github.com/BlockCarbon/market/blob/main/jurisdiction.md)
 
 
 ## 3. Prototype designs ("MVP")
+
+A specialized middleware layer facilitates interaction between on-chain carbon credit tokens and off-chain validation systems. This layer implements oracle networks for real-time price feeds and verification status updates from authorized carbon credit registries. The smart contract architecture implements a hybrid validation model that combines the efficiency of centralized verification with the transparency of decentralized execution. The core components include:
+
+* Registry Contract: A foundational contract that maintains the mapping between physical carbon credits and their tokenized representations.
+
+* Trading Contract: Manages the automated market making functions and implements a novel price discovery mechanism optimized for carbon credit characteristics.
+
+To better understand the requirements and challenges of a carbon credit market place, its integration into a blockchain settlement and exchange layer, and Cardano's UTxO model and native token capabilities and smart contract languages, where Aiken is at the vanguard for easy, safe on-chain validators. Prototype React dApp can be found in this linked repository, smart contracts are in this [folder](https://github.com/BlockCarbon/market/tree/main/validators).
+
 
 [Main App Landing Page](https://new-bc-marketplace-git-main-blockcarbon.vercel.app/#)
 
@@ -40,10 +51,13 @@ A lot has changed since BlockCarbon launched in 2021, and despite bullish market
 
 
 ### Fungibility trade-off
+When on-chain carbon tokens first emerged in 2021, the future of web3 was believed to be in dynamic NFTs. This has changed a lot over the last few years, as fungibility is more important to users and investors than bespoke features. Enforcement of legal contracts and custody of real world assets will continue to rely on third party, "IRL" custodians, law enforcement and so on. The job of the blockchain is to be the "money layer" - a highly secure, immutable and code-enforceable economic dimension, that does not compete but improve our physical lives. Compared to BlockCarbon's first designs in Plutus from 4 years ago, a lot of development has gone into leveraging metadata and linking multiple registries, as opposed to ever more sophisticated NFTs for batches, vintages, pooling and so on.
 
 ### Adjustment mechanisms
+Carbon offsetting matches a known quantity - the current emission in CO2 equivalent metric weight units - with an unknown one. No matter whether they are from nature-based projects like reforestation or energy efficiency, carbon credits represent current unmeasured, or future, sequestation or non-emission of carbon versus baseline. This requires flexibility to adjust credit streams that can be compared to cash flows but in tonnes instead of dollars or ADA. If these change, less tokens will be issued and pre-minted tokens need to be burned. 
 
 ### Transparent supply reporting – all minting, retirement and adjustment
+The interplay of off-chain application and registry with the holders' wallets and on-chain token smart contracts needs to be coded for all eventualities, and be easily available for query on the Cardano blockchain explorers. Unlike legacy exchanges and offsetting service providers, this ensures each project that reduces CO2 versus baseline can be matched ot its off-set and makes double counting impossible. Along with the low transaction costs, the predicatability and transparency is the main advantage of blockchain carbon credits. The ability to rely on contracts executing as previous agreed without anyone "changing their mind" is another strong selling point, especially when dealing with companies and governments across multiple jurisdictions.
 
 
 ## BlockCarbon Introduction
