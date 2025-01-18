@@ -484,3 +484,26 @@ Banking relationship management
 Conclusion
 The selection of a legal jurisdiction for a carbon token exchange requires balancing multiple factors beyond traditional considerations for crypto projects. The recommended dual-jurisdiction approach with Singapore and Germany, supported by Estonian operations, provides a robust foundation for building a successful carbon token exchange while managing key risks and leveraging existing resources.
 The hybrid model combining decentralized trading with KYC requirements appears most promising for carbon markets, as it balances innovation with necessary compliance and verification requirements. This approach is best supported by jurisdictions with clear regulatory frameworks and openness to technological innovation in both financial and environmental sectors.
+
+## Legal Advice
+
+Yuliya Barabash
+• Firm:SBSB Fintech Lawyers
+• Country:Estonia
+• Email:y.barabash@sb-sb.com
+
+Atiqa Sameena
+• Firm: The Law Society of Singapore
+• Country:Singapore
+Senior Executive Officer
+
+Sergey Ostrovskiy
+Partner
+ostrovskiy@aurum.law 
+
+Stephan R. Schulenberg, LL.M. Eur.
+Rechtsanwalt & Spezialist für MLM- und Vertriebsrecht
+André Schenk, LL.M. Eur.
+Rechtsanwalt & Fachanwalt für gewerblichen Rechtsschutz
+T (+49) 040 / 7344 086-0
+mail@sbs-legal.de
