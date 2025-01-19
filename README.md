@@ -4,10 +4,10 @@ Development of hybrid market place research and blueprints for Cardano carbon cr
 We take a look at best practise industry carbon registry, token minting policy and retirement contracts and adjust them for the UTxO model and its advantages. Meant for discussion of progressive elements and testnet implementation as well as Python or Typescript deployment like [Opshin](https://github.com/OpShin/opshin), [MeshJS](https://meshjs.dev/). Carbon token minting, swapping, retirement and adjustment mechanisms on-chain are demonstrated in [Aiken smart contract language](https://aiken-lang.org/) and web-app leverages [React](https://react.dev/) framework.
 
 **Design Requirements:**
-* prevent “sweeping the floor”, old-vintage, low-quality, unsustainable or dubious carbon credits
-* reduce reliance on single or few third party verification services, or those with dubious reputation
-*  enable new technologies or native verification solutions without diluting quality (AI, IoT etc)
-* compliance with existing schemes (implicitly but not explicitly) for “desirable” stakeholders
+* prevent [“sweeping the floor”](https://blog.toucan.earth/toucan-history/), old-vintage, low-quality, unsustainable or dubious carbon credits
+* reduce reliance on single or few [third party verification](https://blog.toucan.earth/content/files/2023/01/Toucan_Verra_response.pdf) services, or those with dubious reputation
+*  enable [new technologies](https://www.sciencedirect.com/science/article/pii/S2666017224000026) or native verification solutions without diluting quality (AI, IoT etc)
+* compliance with [existing schemes](https://www.icao.int/environmental-protection/CORSIA/Pages/default.aspx) (implicitly but not explicitly) for “desirable” stakeholders
 * not too complex, confusing
 * fast arbitration, legal clarity
 * risk management of systemic failures
