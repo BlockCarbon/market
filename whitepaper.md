@@ -958,6 +958,21 @@ export class PricingService {
 
 ## 8. BlockCarbon Token
 
+BlockCarbon first launched a [REDD+](https://unfccc.int/topics/land-use/workstreams/redd/what-is-redd) token in 2022 as part of the [ERC-20 Converter](https://github.com/BlockCarbon/erc20-converter) to act as a Cardano native token that is compatible with MCO2 and Toucan nature based tokens.
+
+Core Token Design:
+Each native token would represent a verified ton of CO2e specifically from REDD+ projects, but with stricter parameters than general CORSIA credits. The token metadata would encode crucial REDD+ specific elements:
+
+Project boundary coordinates
+Baseline deforestation rate calculations
+Local community benefit sharing mechanisms
+Biodiversity co-benefits metrics
+Reference to satellite monitoring data
+Vintage year and verification dates
+Nesting status within national REDD+ frameworks
+
+This token currently does not have "tokenomics" in the legal sense, and only carried test-ADA value. This was necessary to prevent investor losses in an adverse legal and (crypto) asset environement, and allowed us to experiment with the technical infrastructure requirements and design architecture, without creating the misunderstanding of presenting an investable asset or sale of securities etc.
+
 ### 8.1 Token Structure
 
 The BlockCarbon token ecosystem implements a multi-token architecture to separate governance rights from trading functionality. The primary token structures are defined as follows:
